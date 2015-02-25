@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!-- Tutorial_02_UI_Setup (HTML and CSS) -->
+<Module>
+	<!-- 
+		/*STEP 1*/ Let's rename our application and set a default height for the gadget to 250 in ModulePrefs
+	-->
+	<ModulePrefs title="Tutorial_02_UI_Setup" height="250">
+	</ModulePrefs>
+	<Content type="html">
+		<![CDATA[
+			<!-- 
+			*STEP 2
+			* Add some basic HTML structure to our gadget
+			-->
+			<div id="app">
+				<div id="header"><h2>OpenSocial Tutorial Tool</h2></div>
+				<div id="body"></div>
+				<div id="footer"></div>
+			</div>
+			
+			<!-- 
+			*STEP 3
+			* Add CSS styling to set properties for app, header, body and footer elements.
+			-->
+			<style type="text/css">
+				#app {line-height: 20px;border: 1px solid #EEEEEE;}
+				#header {padding-top: 10px;
+						padding-bottom: 10px;
+						margin-left: auto;
+						margin-right: auto;
+						width: 40%;
+						color: #5c5c5c;}
+				#body {color: #5c5c5c;padding-left: 30px;}
+				#footer {padding: 30px;}
+				#voteButton {width: 40px;height: 40px;padding: 2px;vertical-align:middle;}
+				#thumbnail {width: 40px;height: 40px;padding: 2px;vertical-align:middle;}
+			</style>
+		]]>
+	</Content>
+</Module>
