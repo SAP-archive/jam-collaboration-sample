@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!-- Tutorial_08_Complete_Tutorial_Code_Example (HTML, CSS, JavaScript) -->
+<Module>
+	<ModulePrefs title="Tutorial_08_Complete_Tutorial_Code_Example" height="250">
+        <Require feature="wave"/>
+        <Require feature="dynamic-height"/>
+        <Require feature="minimessage"/>
+    </ModulePrefs>
+	<Content type="html">
+		<![CDATA[
+			<!-- Add interactive functionality via Javascript -->
+			<script type="text/javascript" src="https://www.googledrive.com/host/0B0DPCg3D7fj6QXZ0TDlXYUNIZmM"></script>
+			
+			<!-- Add some basic HTML structure to our gadget-->
+			<div id="app">
+				<div id="header"><h2>OpenSocial Tutorial Tool</h2></div>
+				<div id="body"></div>
+				<div id="footer"></div>
+			</div>
+			
+			<!-- Add CSS styling to set properties for app, header, body and footer elements. -->
+			<link rel="stylesheet" type="text/css" href="https://www.googledrive.com/host/0B0DPCg3D7fj6Zk9ZTVRYRlM4RVk">
+		]]>
+	</Content>
+</Module >
