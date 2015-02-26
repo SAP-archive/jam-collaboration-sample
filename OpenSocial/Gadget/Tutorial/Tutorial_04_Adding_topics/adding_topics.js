@@ -68,8 +68,8 @@ function renderInfo() {
     document.getElementById('body').innerHTML = html;
     
     /** Create "Add topic" button to the footer */
-    //html += '<input type="text" id="textBox" value=""/><button id="addInput" onclick="addInput()">Add Topic</button>'
-    //document.getElementById('footer').innerHTML = html;
+    html += '<input type="text" id="textBox" value=""/><button id="addInput" onclick="addInput()">Add Topic</button>';
+    document.getElementById('footer').innerHTML = html;
     
     /** Adjust window size dynamically */
     gadgets.window.adjustHeight();
