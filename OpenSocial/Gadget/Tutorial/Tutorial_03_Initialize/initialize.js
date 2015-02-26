@@ -16,7 +16,8 @@ function init() {
 }
 
 /**
- * STEP 3 - Initialize our gadget by passing init().
+ * STEP 3
+ * Initialize our gadget by passing init().
  */
 // Initializes gadget after receiving a notification that the page is loaded and the DOM is ready.
 gadgets.util.registerOnLoadHandler(init); 

@@ -11,30 +11,14 @@
     </ModulePrefs>
 	<Content type="html">
 		<![CDATA[
-			<script type="text/JavaScript">
-				/**
-				 * STEP 2 - Add Javascript that sets callbacks and renders the gadget.
-				 */
-				// Renders the gadget
-				function renderInfo() {
-				    }
-				
-				// Sets callbacks
-				function init() {
-				    if (wave && wave.isInWaveContainer()) {
-				        // Loads the gadget's initial state and the subsequent changes to it
-				        wave.setStateCallback(renderInfo);
-				        // Loads participants and any changes to them
-				        wave.setParticipantCallback(renderInfo);
-				    }
-				}
-				
-				/**
-				 * STEP 3 - Initialize our gadget by passing init().
-				 */
-				// Initializes gadget after receiving a notification that the page is loaded and the DOM is ready.
-				gadgets.util.registerOnLoadHandler(init); 
-			</script>
+			<!--
+			 * STEP 2
+			 * Add Javascript that sets callbacks and renders the gadget.
+			 * 
+			 * STEP 3
+			 * Initialize our gadget by passing init().
+			-->
+			<script type="text/javascript" src="https://www.googledrive.com/host/0B0DPCg3D7fj6WlRxV2UxODlqZDA"></script>
 			
 			<!-- Add some basic HTML structure to our gadget-->
 			<div id="app">
@@ -44,19 +28,7 @@
 			</div>
 			
 			<!-- Add CSS styling to set properties for app, header, body and footer elements. -->
-			<style type="text/css">
-				#app {line-height: 20px;border: 1px solid #EEEEEE;}
-				#header {padding-top: 10px;
-						padding-bottom: 10px;
-						margin-left: auto;
-						margin-right: auto;
-						width: 40%;
-						color: #5c5c5c;}
-				#body {color: #5c5c5c;padding-left: 30px;}
-				#footer {padding: 30px;}
-				#voteButton {width: 40px;height: 40px;padding: 2px;vertical-align:middle;}
-				#thumbnail {width: 40px;height: 40px;padding: 2px;vertical-align:middle;}
-			</style>
+			<link rel="stylesheet" type="text/css" href="https://www.googledrive.com/host/0B0DPCg3D7fj6MGtuYUszMkEwM3c">
 		]]>
 	</Content>
 </Module>
