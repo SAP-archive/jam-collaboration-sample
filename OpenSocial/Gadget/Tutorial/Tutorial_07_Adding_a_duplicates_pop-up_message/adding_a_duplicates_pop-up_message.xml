@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!-- Tutorial_07_Adding_a_duplicates_pop-up_message (JavaScript) -->
+<Module>
+	<!-- 
+	* STEP 1
+	* - Rename our application
+	* - Add "minimessage" as a required feature to ModulePrefs
+	-->
+	<ModulePrefs title="Tutorial_07_Adding_a_duplicates_pop-up_message" height="250">
+        <Require feature="wave"/>
+        <Require feature="dynamic-height"/>
+        <Require feature="minimessage"/>
+    </ModulePrefs>
+	<Content type="html">
+		<![CDATA[
+			<!--
+			 * STEP 2
+			 * - Check if the user has already voted for the topic, in which case an error will be thrown
+			 * -->
+			<script type="text/javascript" src="https://www.googledrive.com/host/0B0DPCg3D7fj6QXZ0TDlXYUNIZmM"></script>
+			
+			<!-- Add some basic HTML structure to our gadget-->
+			<div id="app">
+				<div id="header"><h2>OpenSocial Tutorial Tool</h2></div>
+				<div id="body"></div>
+				<div id="footer"></div>
+			</div>
+			
+			<!-- Add CSS styling to set properties for app, header, body and footer elements. -->
+			<link rel="stylesheet" type="text/css" href="https://www.googledrive.com/host/0B0DPCg3D7fj6Zk9ZTVRYRlM4RVk">
+		]]>
+	</Content>
+</Module >

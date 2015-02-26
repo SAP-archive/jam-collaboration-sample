@@ -1,0 +1,12 @@
+/* Add CSS styling to set properties for app, header, body and footer elements. */
+#app {line-height: 20px;border: 1px solid #EEEEEE;}
+#header {padding-top: 10px;
+		padding-bottom: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 40%;
+		color: #5c5c5c;}
+#body {color: #5c5c5c;padding-left: 30px;}
+#footer {padding: 30px;}
+#voteButton {width: 40px;height: 40px;padding: 2px;vertical-align:middle;}
+#thumbnail {width: 40px;height: 40px;padding: 2px;vertical-align:middle;}
