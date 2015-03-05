@@ -23,7 +23,7 @@
 			*STEP 3
 			* Add CSS styling to set properties for app, header, body and footer elements.
 			-->
-			<link rel="stylesheet" type="text/css" href="https://www.googledrive.com/host/0B0DPCg3D7fj6dDBLUEdsclhtazg">
+			<link rel="stylesheet" type="text/css" href="ui_setup.css">
 		]]>
 	</Content>
 </Module>

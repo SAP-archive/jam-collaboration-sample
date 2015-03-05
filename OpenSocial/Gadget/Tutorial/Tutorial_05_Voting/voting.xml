@@ -22,7 +22,7 @@
 			 * - Add thumbnail rendering
 			 * - Add button rendering
 			-->
-			<script type="text/javascript" src="https://www.googledrive.com/host/0B0DPCg3D7fj6TUd1NUJrRlhiajg"></script>
+			<script type="text/javascript" src="voting.js"></script>
 			
 			<!-- Add some basic HTML structure to our gadget-->
 			<div id="app">
@@ -32,7 +32,7 @@
 			</div>
 			
 			<!-- Add CSS styling to set properties for app, header, body and footer elements. -->
-			<link rel="stylesheet" type="text/css" href="https://www.googledrive.com/host/0B0DPCg3D7fj6SVlOd0hrMnUyWE0">
+			<link rel="stylesheet" type="text/css" href="voting.css">
 		]]>
 	</Content>
 </Module >

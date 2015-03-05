@@ -7,6 +7,8 @@ A collection of simple sample code containing examples that demonstrate simple A
 * This tutorial is located at: http://help.sap.com/download/documentation/sapjam/developer/index.html#opensocial/concepts/tutorial-Intro.html
 
 # License
+Copyright 2014, SAP AG
+
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
