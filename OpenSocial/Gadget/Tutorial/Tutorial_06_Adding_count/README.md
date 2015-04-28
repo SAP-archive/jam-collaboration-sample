@@ -1,6 +1,4 @@
-Tutorial_06_Adding_count
+Lesson 6 - Adding count
 ========================
-
-Adding count — (XML, HTML, CSS, JavaScript)
 
 This sixth lesson of the tutorial adds the counts of participants and group members to the gadget.
