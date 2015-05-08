@@ -10,6 +10,10 @@ A collection of simple sample code containing examples that demonstrate simple A
 * Source code for the OpenSocial gadget in "Applying String Localization to OpenSocial Gadgets" in the "SAP Jam Developer Guide".
 * The related documentation is located at: http://help.sap.com/download/documentation/sapjam/developer/index.html#opensocial/concepts/LOCALE-StringLocalization.html
 
+### OpenSocial/Gadget/Search/Search_Jam_Appdata
+* Source code for the OpenSocial gadget in "Adding OpenSocial Gadget Data to SAP Jam Search" in the "SAP Jam Developer Guide".
+* The related documentation is located at: http://help.sap.com/download/documentation/sapjam/developer/index.html#opensocial/concepts/JAM_SEARCH-OpenSocial_Gadget_Data.html
+
 # License
 Copyright 2014, SAP AG
 
