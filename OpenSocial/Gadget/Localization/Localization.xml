@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="String Localization" 
+               height="250" 
+               author="SAP" 
+               description="This gadget localizes its output based on a compatible 
+               detected locale (English, French).">   
+    <Link rel="mediumIcon" href="mediumIcon.png" />
+    <Link rel="icon" href="icon.png" />                         
+    <Require feature="osapi" />
+    <Require feature="dynamic-height"/>
+    <Require feature="minimessage"/>
+
+    <!--
+    Locales:                          en=English, fr=French
+    KEY:                              detectedLocaleGreeting
+    XML:                              <msg name="KEY">DATA</msg>
+    Object:                           Msg.KEY=DATA
+    Relationship (XML = Object):      '<msg name="KEY">DATA</msg>' = 'Msg.KEY=DATA'
+    Object embedded in HTML:          ${Msg.KEY}
+    -->
+    
+    <Locale lang="en">
+      <msg name="detectedLocaleGreeting">Detected Locale = <b>English</b><br/>
+      Greeting = <b>Hello!</b></msg>
+    </Locale>
+    <Locale lang="fr">
+      <msg name="detectedLocaleGreeting">Detected Locale = <b>French</b><br/>
+      Greeting = <b>Bonjour!</b></msg>
+    </Locale>
+
+  </ModulePrefs>
+  <Content type="html">
+    <![CDATA[      
+        <h1>String Localization</h1>
+        <p>This gadget localizes its output based on a detected locale.</p>
+        <p>Adjust your browser to a different locale (English or French) and 
+          reload this gadget.
+          The 'Detected Locale' and 'Greeting' will automatically change.</p>
+        <p>${Msg.detectedLocaleGreeting}</p>
+      ]]>
+  </Content>
+</Module>
