@@ -7,8 +7,10 @@ A collection of simple sample code containing examples that demonstrate simple A
 * Consists of the following Eclipse Projects:
   * jam_java_oauth1_client
     * Client library that provides authentication of the SAP Jam API with OAuth1.0 and the HMAC-SHA1 signature type.
+    * Dependencies:
+      * junit.jar - http://junit.org/
   * jam_java_oauth1_hmac_sha1_client_sample
-    * Sample client code that uses the jam_java_oauth1_client library to illustrate authentication of the SAP Jam API with OAuth1.0 and the HMAC-SHA1 signature type.
+     * Sample client code that uses the jam_java_oauth1_client library to illustrate authentication of the SAP Jam API with OAuth1.0 and the HMAC-SHA1 signature type.
 
 ### OpenSocial/Gadget/Tutorial
 * Source code required for completing the "SAP Jam OpenSocial Tutorial" in the "SAP Jam Developer Guide".
