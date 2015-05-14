@@ -25,6 +25,13 @@ A collection of simple sample code containing examples that demonstrate simple A
 * Source code for the OpenSocial gadget in "Adding OpenSocial Gadget Data to SAP Jam Search" in the "SAP Jam Developer Guide".
 * The related documentation is located at: http://help.sap.com/download/documentation/sapjam/developer/index.html#opensocial/concepts/JAM_SEARCH-OpenSocial_Gadget_Data.html
 
+### SAP_Jam_OData_HCP
+* Source code for the Java servlets in "Using the SAP Jam API to access data in Jam via OData" in the "SAP Jam Developer Guide".
+  * Note: You will need an account on a SAP Jam instance and an associated HCP trial account to run these samples.
+* This set of tutorials will demonstrate how to setup a Java servlet on HCP that makes OData calls to your SAP Jam instance.
+* The tutorials are located at: http://help.sap.com/download/documentation/sapjam/developer/index.html#hcp/concepts/INTRO-API_integrate_features_data.html
+
+
 # License
 Copyright 2014, SAP AG
 
