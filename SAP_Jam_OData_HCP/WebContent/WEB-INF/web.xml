@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>SAPJamHCPSamples</display-name>
+  <servlet>
+    <description></description>
+    <display-name>Connect</display-name>
+    <servlet-name>Connect</servlet-name>
+    <servlet-class>com.sap.sapjam.samples.Connect</servlet-class>
+  </servlet>
+  <servlet>
+    <description></description>
+    <display-name>CBO Event</display-name>
+    <servlet-name>cboevent</servlet-name>
+    <servlet-class>com.sap.sapjam.samples.WriteExternalBusinessObjectEvents</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Connect</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>cboevent</servlet-name>
+    <url-pattern>/cboevent</url-pattern>
+  </servlet-mapping>
+  <resource-ref>
+    <res-ref-name>sap_jam_odata</res-ref-name>
+    <res-type>com.sap.core.connectivity.api.http.HttpDestination</res-type>
+  </resource-ref>
+  <login-config>
+    <auth-method>FORM</auth-method>
+  </login-config>
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>Protected Area</web-resource-name>
+      <url-pattern>/Connect</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>Everyone</role-name>
+    </auth-constraint>
+  </security-constraint>
+  <security-role>
+    <description>All SAP HANA Cloud Platform users</description>
+    <role-name>Everyone</role-name>
+  </security-role>
+  <servlet>
+    <description></description>
+    <display-name>CreateBO</display-name>
+    <servlet-name>CreateBO</servlet-name>
+    <servlet-class>com.sap.sapjam.samples.CreateExternalBusinessObject</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateBO</servlet-name>
+    <url-pattern>/CreateBO</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CreateGroup</display-name>
+    <servlet-name>CreateGroup</servlet-name>
+    <servlet-class>com.sap.sapjam.samples.CreateGroup</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateGroup</servlet-name>
+    <url-pattern>/CreateGroup</url-pattern>
+  </servlet-mapping>
+</web-app>
