@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <Module>
+   <ModulePrefs title="HCP_Lumira_URL_Gadget" height="600">
+     <Link rel="Icon" href="icons/00_analytics_20x20.png"/>
+     <Link rel="MediumIcon" href="icons/01_analytics_60x70.png"/>
+     <Link rel="LargeIcon" href="icons/02_analytics_172x200.png"/>
+   </ModulePrefs>
+<Content type="url" href="HCP_Lumira.html"/>
+ </Module>
