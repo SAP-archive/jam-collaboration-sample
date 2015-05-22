@@ -37,7 +37,7 @@ A collection of simple sample code containing examples that demonstrate simple A
 * The tutorials are located at: http://help.sap.com/download/documentation/sapjam/developer/index.html#hcp/concepts/INTRO-API_integrate_features_data.html
 
 ### Widgets/Div/Feed
-* Source code for the following SAP Jam div-embedded feed widgets (HTML5, Javascript):
+* Source code for the SAP Jam div-embedded feed widgets in "Using SAP Jam with embeddable widgets" in the "SAP Jam Developer Guide". These feed widgets demonstrate the following authentication types:
   * Pre-existing SAP Jam session
   * SAP Jam session with Sign In
   * SAP Jam session with Sign In pop-up
