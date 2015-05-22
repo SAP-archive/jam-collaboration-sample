@@ -36,6 +36,15 @@ A collection of simple sample code containing examples that demonstrate simple A
 * This set of tutorials will demonstrate how to setup a Java servlet on HCP that makes OData calls to your SAP Jam instance.
 * The tutorials are located at: http://help.sap.com/download/documentation/sapjam/developer/index.html#hcp/concepts/INTRO-API_integrate_features_data.html
 
+### Widgets/Div/Feed
+* Source code for the following SAP Jam div-embedded feed widgets (HTML5, Javascript):
+  * Pre-existing SAP Jam session - Div_Pre-existing_session.html
+  * SAP Jam session with Sign In - Div_Session_with_sign-in.html
+  * SAP Jam session with Sign In pop-up - Div_Session_with_sign-in_pop-up.html
+  * Single Use Token - Div_single_use_token.html
+  * SuccessFactors IdentityProvider - Div_SuccessFactors_IDP.html
+* The related documentation is located at: http://help.sap.com/download/documentation/sapjam/developer/index.html#hcp/concepts/INTRO-embeddable_widgets.html
+
 
 # License
 Copyright 2014, SAP AG
