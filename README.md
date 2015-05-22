@@ -38,11 +38,11 @@ A collection of simple sample code containing examples that demonstrate simple A
 
 ### Widgets/Div/Feed
 * Source code for the following SAP Jam div-embedded feed widgets (HTML5, Javascript):
-  * Pre-existing SAP Jam session - Div_Pre-existing_session.html
-  * SAP Jam session with Sign In - Div_Session_with_sign-in.html
-  * SAP Jam session with Sign In pop-up - Div_Session_with_sign-in_pop-up.html
-  * Single Use Token - Div_single_use_token.html
-  * SuccessFactors IdentityProvider - Div_SuccessFactors_IDP.html
+  * Pre-existing SAP Jam session
+  * SAP Jam session with Sign In
+  * SAP Jam session with Sign In pop-up
+  * Single Use Token
+  * SuccessFactors IdentityProvider
 * The related documentation is located at: http://help.sap.com/download/documentation/sapjam/developer/index.html#hcp/concepts/INTRO-embeddable_widgets.html
 
 
