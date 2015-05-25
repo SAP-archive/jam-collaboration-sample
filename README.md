@@ -38,11 +38,11 @@ A collection of simple sample code containing examples that demonstrate simple A
 
 ### Widgets/Div/Feed
 * Source code for the SAP Jam div-embedded feed widgets in "Using SAP Jam with embeddable widgets" in the "SAP Jam Developer Guide". These feed widgets demonstrate the following authentication types:
+  * SuccessFactors IdentityProvider
+  * Single Use Token
   * Pre-existing SAP Jam session
   * SAP Jam session with Sign In
   * SAP Jam session with Sign In pop-up
-  * Single Use Token
-  * SuccessFactors IdentityProvider
 * The related documentation is located at: http://help.sap.com/download/documentation/sapjam/developer/index.html#hcp/concepts/INTRO-embeddable_widgets.html
 
 
