@@ -30,11 +30,14 @@ A collection of simple sample code containing examples that demonstrate simple A
 * This tutorial is located at: http://help.sap.com/download/documentation/sapjam/developer/index.html#opensocial/concepts/tutorial-Intro.html
 
 ### SAP_Jam_OData_HCP
-* Source code for the Java servlets in "Using the SAP Jam API to access data in Jam via OData" in the "SAP Jam Developer Guide".
-  * Requirements:
-    * An account on a SAP Jam instance and an associated HCP trial account to run these samples.
-* This set of tutorials will demonstrate how to setup a Java servlet on HCP that makes OData calls to your SAP Jam instance.
-* The tutorials are located at: http://help.sap.com/download/documentation/sapjam/developer/index.html#hcp/concepts/INTRO-API_integrate_features_data.html
+* Source code for the "Using the SAP Jam API to access data in Jam via OData" tutorial in the "SAP Jam Developer Guide".
+  * http://help.sap.com/download/documentation/sapjam/developer/index.html#hcp/concepts/INTRO-API_integrate_features_data.html
+  * Requirements - An account on a SAP Jam instance and an associated HCP trial account.
+* This Java servlet uses your HCP and SAP Jam instance via OAuth2SAMLBearerAssertion to:
+  * Get general information from SAP Jam about the currently logged-in user and the list of groups that user belongs to.
+  * Get group specific information from SAP Jam.
+  * Create a single-use token for SAP Jam div-embedded widget authentication.
+
 
 ### Widgets/Div/Feed
 * Source code for the SAP Jam div-embedded feed widgets in "Using SAP Jam with embeddable widgets" in the "SAP Jam Developer Guide". These feed widgets demonstrate the following authentication types:
