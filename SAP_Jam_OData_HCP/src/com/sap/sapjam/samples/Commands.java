@@ -41,21 +41,4 @@ public class Commands {
 		}
 	}
 	
-	/*private void processJamParameters(String... jamParameters){
-		if (jamParameters != null){
-			outerloop:
-			for (String s:jamParameters){
-				if (s == null){
-					this._command += "&Id=ENTER_YOUR_ID_HERE";
-					break outerloop;
-				}
-				else if (s.equalsIgnoreCase("none")){
-					break outerloop;
-				}
-			}
-		}
-	}*/
-	
-	
-	
 }

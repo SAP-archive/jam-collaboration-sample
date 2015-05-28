@@ -79,119 +79,97 @@ public class Connect extends HttpServlet {
 			HttpDestination destination = (HttpDestination)ctx.lookup("java:comp/env/sap_jam_odata");
 			HttpClient client = destination.createHttpClient();
 			
+			// Create a commands object - Holds all data required to create and run an OData call
 			ArrayList<Commands> allCommands = new ArrayList<Commands>();
 			
-			// Do not require Id
-			allCommands.add(new Commands("Get the currently logged-in user from Jam", "GET", "Self", "Self"));
-			allCommands.add(new Commands("Return the list of groups the current logged in user belongs to", "GET", "Groups", "Groups"));
+			// Tracks when a new command category is added
+			ArrayList<Integer> allCommandsTracker = new ArrayList<Integer>();
 			
-			// Require Id - return a URL parameter of "Id=ENTER_YOUR_ID_HERE" when groupId is null
+			// [GET] - Do not require Id - returns user Id and group Ids
+			allCommands.add(new Commands("Get the currently logged-in user from Jam", "GET", "api/v1/OData/Self", "Self"));
+			allCommands.add(new Commands("Return the list of groups the current logged in user belongs to", "GET", "api/v1/OData/Groups", "Groups"));
+			allCommandsTracker.add(allCommands.size());
+			
+			// [GET] - Require group Id - returns a URL parameter of "Id=ENTER_YOUR_ID_HERE" when groupId is null
 			allCommands.add(new Commands("Return the OData for a specific group", 
-					"GET", "Groups" + "('" + groupId + "')", "Groups", "groupId:"+groupId));
+					"GET", "api/v1/OData/Groups" + "('" + groupId + "')", "Groups", "groupId:"+groupId));
 			allCommands.add(new Commands("Returns the primary external object for the specified group", 
-					"GET", "Groups" + "('" + groupId + "')/" + "PrimaryExternalObject", "PrimaryExternalObject", "groupId:"+groupId));
+					"GET", "api/v1/OData/Groups" + "('" + groupId + "')/" + "PrimaryExternalObject", "PrimaryExternalObject", "groupId:"+groupId));
 			allCommands.add(new Commands("Returns the list of featured external objects for the group", 
-					"GET", "Groups" + "('" + groupId + "')/" + "FeaturedExternalObjects", "FeaturedExternalObjects", "groupId:"+groupId));
+					"GET", "api/v1/OData/Groups" + "('" + groupId + "')/" + "FeaturedExternalObjects", "FeaturedExternalObjects", "groupId:"+groupId));
 			allCommands.add(new Commands("Returns the list of participants or members of the group", 
-					"GET", "Groups" + "('" + groupId + "')/" + "Memberships", "Memberships", "groupId:"+groupId));
+					"GET", "api/v1/OData/Groups" + "('" + groupId + "')/" + "Memberships", "Memberships", "groupId:"+groupId));
 			allCommands.add(new Commands("Returns all the content items of the group", 
-					"GET", "Groups" + "('" + groupId + "')/" + "AllContentItems", "AllContentItems", "groupId:"+groupId));
+					"GET", "api/v1/OData/Groups" + "('" + groupId + "')/" + "AllContentItems", "AllContentItems", "groupId:"+groupId));
+			allCommandsTracker.add(allCommands.size());
 			
+			// [POST] - Does not require Id - returns a single-use token 
+			allCommands.add(new Commands("Create a single-use token used for widget authentication", 
+					"POST", "v1/single_use_tokens", "single_use_tokens"));
+			allCommandsTracker.add(allCommands.size());
+			
+			// [POST] - Require Id - returns a URL parameter of ...
+			
+			
+			// Processes all command objects
 			int allCommands_Total = allCommands.size();
 			for (int i = 0; i < allCommands_Total; i++){
 				Commands currentCommand = allCommands.get(i);
-				if (command.compareToIgnoreCase( currentCommand._command ) == 0 ){
-					this.displayODataXML(client, out, "/" + currentCommand._odata_call);
+				if (command.equalsIgnoreCase(currentCommand._command)){
+					// Runs the OData call to SAP Jam
+					if (currentCommand._odata_call_type == "GET"){
+						this.displayGetODataXML(client, out, "/" + currentCommand._odata_call);
+					}
+					else if (currentCommand._odata_call_type == "POST"){
+						this.displayPostODataXML(client, out, "/" + currentCommand._odata_call);
+					}
 					break;
 				}
 				else if (i == (allCommands_Total - 1) ){
-					out.println("<html>");
-					out.println("<head>");
-					out.println("<h1>SAP Jam OData Explorer</h1>");
-					out.println("<title>SAP Jam OData Explorer</title>");
-					out.println("</head>");
-					out.println("<body>");
-					for (int j = 0; j < allCommands.size(); j++){
-						Commands printCommand = allCommands.get(j);
-						if (j == 0){
-							out.println("<h2>GET general information (Id, etc.) from SAP Jam:</h2>");
-							out.println("<ul>");
-						}
-						else if (j == 2){
-							out.println("</ul>");
-							out.println("<h2>GET specific information from SAP Jam (requires Id):</h2>");
-							out.println("<ul>");
-						}
-						out.println("<li><a target=\"_blank\" href=\"" + theBaseURL + "?command=" + printCommand._command + "\">" 
-						+ "[" + printCommand._odata_call_type + "] - " + printCommand._description + "</a></li>");
-						
-						if (j == (allCommands.size() - 1) ){
-							out.println("</ul>");
-						}
-					}
-					out.println("</body>");
-					out.println("</html>");
+					// Creates the html page with the OData links
+					generateLandingPage(theBaseURL, allCommands, allCommandsTracker, out);
 					break;
 				}
 			}
-			
-			/*
-			//OData calls
-			if ( command.compareToIgnoreCase( OData_GET + "_" + Jam_Self ) == 0 ) {
-				// Get the currently logged-in user from Jam
-				this.displayODataXML(client, out, "/" + Jam_Self);
-			} else if ( command.compareToIgnoreCase( OData_GET + "_" + Jam_Groups ) == 0 ) {						
-				//Return the list of groups the current logged in user belongs to
-				this.displayODataXML(client, out, "/" + Jam_Groups);				
-			} else if ( command.compareToIgnoreCase( OData_GET + "_" + Jam_Groups + "_" + groupId ) == 0 ) {			
-				//Return the OData for a specific group
-				this.displayODataXML(client, out, "/" + Jam_Groups + "('" + groupId + "')");
-			} else if ( command.compareToIgnoreCase( OData_GET + "_" + Jam_Groups + "_" + groupId + Jam_PrimaryExternalObject ) == 0 ) {
-				//Returns the primary external object for the specified group
-				this.displayODataXML(client, out, "/" + Jam_Groups + "('" + groupId + "')/" + Jam_PrimaryExternalObject);
-			} else if ( command.compareToIgnoreCase( OData_GET + "_" + Jam_Groups + "_" + groupId + Jam_FeaturedExternalObjects ) == 0 ) {
-				//Returns the list of featured external objects for the group
-				this.displayODataXML(client, out, "/" + Jam_Groups + "('" + groupId + "')/" + Jam_FeaturedExternalObjects);
-			} else if ( command.compareToIgnoreCase( OData_GET + "_" + Jam_Groups + "_" + groupId + Jam_Memberships ) == 0) {
-				//Returns the list of participants or members of the group
-				this.displayODataXML(client, out, "/" + Jam_Groups + "('" + groupId + "')/" + Jam_Memberships);
-			} else if ( command.compareToIgnoreCase( OData_GET + "_" + Jam_Groups + "_" + groupId + Jam_AllContentItems ) == 0 ) {
-				//Returns all the content items of the group
-				this.displayODataXML(client, out, "/" + Jam_Groups + "('" + groupId + "')/" + Jam_AllContentItems);
-			} else {
-				out.println("<html>");
-				out.println("<body>");
-				out.println("<a href=\"" + theBaseURL + "?command=" + OData_GET + Jam_Self + "\">Get the currently logged-in user from Jam</a>");
-				out.println("</body>");
-				out.println("</html>");
-				
-				out.println("e.g. https://<your_HCP_Server_URL>/<your_Eclipse_Project_Name>/?command=self");
-				out.println("e.g. https://<your_HCP_Server_URL>/<your_Eclipse_Project_Name>/?command=groups");
-				out.println("e.g. https://<your_HCP_Server_URL>/<your_Eclipse_Project_Name>/?command=single_use_tokens");
-				out.println("e.g. https://<your_HCP_Server_URL>/<your_Eclipse_Project_Name>/?command=group&group=<GroupID>");
-				out.println("e.g. https://<your_HCP_Server_URL>/<your_Eclipse_Project_Name>/?command=primary&group=<GroupID>");
-				out.println("e.g. https://<your_HCP_Server_URL>/<your_Eclipse_Project_Name>/?command=featured&group=<GroupID>");
-				out.println("e.g. https://<your_HCP_Server_URL>/<your_Eclipse_Project_Name>/?command=members&group=<GroupID>");
-				out.println("e.g. https://<your_HCP_Server_URL>/<your_Eclipse_Project_Name>/?command=content&group=<GroupID>");
-				out.println(" ");
-				out.println("Missing URL Parameter. Please use ?command=groups, group, primary, featured, members, content, template");
-				out.println("e.g. https://<your_HCP_Server_URL>/<your_Eclipse_Project_Name>/?command=self");
-				out.println("e.g. https://<your_HCP_Server_URL>/<your_Eclipse_Project_Name>/?command=groups");
-				out.println("e.g. https://<your_HCP_Server_URL>/<your_Eclipse_Project_Name>/?command=single_use_tokens");
-				out.println(" ");
-				out.println("When requesting information for a specific group please add the parameter group=<GroupID>");
-				out.println("e.g. https://<your_HCP_Server_URL>/<your_Eclipse_Project_Name>/?command=group&group=<GroupID>");
-				out.println("e.g. https://<your_HCP_Server_URL>/<your_Eclipse_Project_Name>/?command=primary&group=<GroupID>");
-				out.println("e.g. https://<your_HCP_Server_URL>/<your_Eclipse_Project_Name>/?command=featured&group=<GroupID>");
-				out.println("e.g. https://<your_HCP_Server_URL>/<your_Eclipse_Project_Name>/?command=members&group=<GroupID>");
-				out.println("e.g. https://<your_HCP_Server_URL>/<your_Eclipse_Project_Name>/?command=content&group=<GroupID>");
-			
-			}*/
-					
 		} catch (Exception e) {
 				response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, e.getMessage());
 			}
+	}
+	
+	private void generateLandingPage(StringBuffer theBaseURL, ArrayList<Commands> allCommands, ArrayList<Integer> allCommandsTracker, PrintWriter out){
+		out.println("<html>");
+		out.println("<head>");
+		out.println("<h1>SAP Jam OData Explorer</h1>");
+		out.println("<title>SAP Jam OData Explorer</title>");
+		out.println("</head>");
+		out.println("<body>");
+		for (int j = 0; j < allCommands.size(); j++){
+			Commands printCommand = allCommands.get(j);
+			if (j == 0){
+				out.println("<h2>[GET] - general information (Id, etc.) from SAP Jam:</h2>");
+				out.println("<ul>");
+			}
+			else if (j == allCommandsTracker.get(0)){
+				out.println("</ul>");
+				out.println("<h2>[GET] - group specific information from SAP Jam (requires group Id):</h2>");
+				out.println("<ul>");
+			}
+			else if (j == allCommandsTracker.get(1)){
+				out.println("</ul>");
+				out.println("<h2>[POST] - single-use token:</h2>");
+				out.println("<ul>");
+			}
+			// Creates a hyperlink with description using the following URL structure:
+			// - https://<your_HCP_Server_URL>/<your_Eclipse_Project_Name>/?command=<command>&Id=<Id>
+			out.println("<li><a target=\"_blank\" href=\"" + theBaseURL + "?command=" + printCommand._command + "\">" 
+					+ "[" + printCommand._odata_call_type + "] - " + printCommand._description + "</a></li>");
 			
+			if (j == (allCommands.size() - 1) ){
+				out.println("</ul>");
+			}
+		}
+		out.println("</body>");
+		out.println("</html>");
 	}
 	
 	private String convertNullToString(String input){
@@ -201,14 +179,23 @@ public class Connect extends HttpServlet {
 		return input;
 	}
 	
-/** Simple method to call SAP Jam via HTTP GET, and display the output to the response
- * 
- * @param client
- * @param out
- * @param url
- * @throws Exception
- */
-	private void displayODataXML(HttpClient client, PrintWriter out, String url ) throws Exception {
+	private void displayPostODataXML(HttpClient client, PrintWriter out, String url ) throws Exception {
+		HttpPost jamRequest = new HttpPost( url );
+		HttpEntity responseEntity = client.execute(jamRequest).getEntity();
+		if ( responseEntity != null )
+			out.println(EntityUtils.toString(responseEntity));
+		else
+			out.println( "There was a problem with the connection");
+	}
+	
+	/** Simple method to call SAP Jam via HTTP GET, and display the output to the response
+	 * 
+	 * @param client
+	 * @param out
+	 * @param url
+	 * @throws Exception
+	 */
+	private void displayGetODataXML(HttpClient client, PrintWriter out, String url ) throws Exception {
 		HttpGet jamRequest = new HttpGet( url );
 		HttpEntity responseEntity = client.execute(jamRequest).getEntity();
 		if ( responseEntity != null )
@@ -217,5 +204,4 @@ public class Connect extends HttpServlet {
 			out.println( "There was a problem with the connection");
 	}
 	
-		
 }
