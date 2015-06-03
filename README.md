@@ -13,7 +13,7 @@ A collection of simple sample code containing examples that demonstrate simple A
      * Sample client code that uses the jam_java_oauth1_client library to illustrate authentication of the SAP Jam API with OAuth1.0 and the HMAC-SHA1 signature type.
 
 ### OpenSocial/Gadget/HCP_Lumira
-* Source code for the OpenSocial gadget in "Using OpenSocial gadgets with SAP Jam on HCP" in the "SAP Jam Developer Guide".
+* Source code for the OpenSocial gadget in "Using OpenSocial gadgets with SAP Jam on SAP HANA Cloud Platform" in the "SAP Jam Developer Guide".
 * The related documentation is located at: http://help.sap.com/download/documentation/sapjam/developer/index.html#hcp/concepts/INTRO-OpenSocial_HCP.html
 
 ### OpenSocial/Gadget/Localization
@@ -32,8 +32,8 @@ A collection of simple sample code containing examples that demonstrate simple A
 ### SAP_Jam_OData_HCP
 * Source code for the "Using the SAP Jam API to access data in Jam via OData" tutorial in the "SAP Jam Developer Guide".
   * http://help.sap.com/download/documentation/sapjam/developer/index.html#hcp/concepts/INTRO-API_integrate_features_data.html
-  * Requirements - An account on a SAP Jam instance and an associated HCP trial account.
-* This Java servlet uses your HCP and SAP Jam instance via OAuth2SAMLBearerAssertion to:
+  * Requirements - An account on a SAP Jam instance and an associated SAP HANA Cloud Platform trial account.
+* This Java servlet uses your SAP HANA Cloud Platform and SAP Jam instance via OAuth2SAMLBearerAssertion to:
   * Get general information from SAP Jam about the currently logged-in user and the list of groups that user belongs to.
   * Get group specific information from SAP Jam.
   * Create a single-use token for SAP Jam div-embedded widget authentication.
