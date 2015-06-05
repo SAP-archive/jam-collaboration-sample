@@ -10,32 +10,5 @@
         <Require feature="wave"/>
         <Require feature="dynamic-height"/>
     </ModulePrefs>
-	<Content type="html">
-		<![CDATA[
-			<!--
-			 * STEP 2 (Implementing the "Add Topic" button)
-			 * - Encode object as JSON string -> toJSON(obj)
-			 * - Decode JSON string into an object -> toObject(str)
-			 * - Stores data in the OpenSocial gadget -> addInput()
-			 * 
-			 * STEP 3 (Rendering topics)
-			 * - Get state
-			 * - Retrieve topics
-			 * - Add topics to the canvas
-			 * - Create "Add topic" button to the footer
-			 * - Adjust window size dynamically
-			-->
-			<script type="text/javascript" src="adding_topics.js"></script>
-			
-			<!-- Add some basic HTML structure to our gadget-->
-			<div id="app">
-				<div id="header"><h2>OpenSocial Tutorial Tool</h2></div>
-				<div id="body"></div>
-				<div id="footer"></div>
-			</div>
-			
-			<!-- Add CSS styling to set properties for app, header, body and footer elements. -->
-			<link rel="stylesheet" type="text/css" href="adding_topics.css">
-		]]>
-	</Content>
-</Module >
+    <Content type="html" href="adding_topics.html"/>
+</Module>

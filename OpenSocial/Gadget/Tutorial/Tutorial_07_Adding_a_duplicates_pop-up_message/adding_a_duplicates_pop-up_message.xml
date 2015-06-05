@@ -11,23 +11,5 @@
         <Require feature="dynamic-height"/>
         <Require feature="minimessage"/>
     </ModulePrefs>
-	<Content type="html">
-		<![CDATA[
-			<!--
-			 * STEP 2
-			 * - Check if the user has already voted for the topic, in which case an error will be thrown
-			 * -->
-			<script type="text/javascript" src="adding_a_duplicates_pop-up_message.js"></script>
-			
-			<!-- Add some basic HTML structure to our gadget-->
-			<div id="app">
-				<div id="header"><h2>OpenSocial Tutorial Tool</h2></div>
-				<div id="body"></div>
-				<div id="footer"></div>
-			</div>
-			
-			<!-- Add CSS styling to set properties for app, header, body and footer elements. -->
-			<link rel="stylesheet" type="text/css" href="adding_a_duplicates_pop-up_message.css">
-		]]>
-	</Content>
-</Module >
+    <Content type="html" href="adding_a_duplicates_pop-up_message.html"/>
+</Module>

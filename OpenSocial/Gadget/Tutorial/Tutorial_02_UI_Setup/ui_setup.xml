@@ -7,23 +7,5 @@
 	-->
 	<ModulePrefs title="Tutorial_02_UI_Setup" height="250">
 	</ModulePrefs>
-	<Content type="html">
-		<![CDATA[
-			<!-- 
-			* STEP 2
-			* Add some basic HTML structure to our gadget
-			-->
-			<div id="app">
-				<div id="header"><h2>OpenSocial Tutorial Tool</h2></div>
-				<div id="body"></div>
-				<div id="footer"></div>
-			</div>
-			
-			<!-- 
-			*STEP 3
-			* Add CSS styling to set properties for app, header, body and footer elements.
-			-->
-			<link rel="stylesheet" type="text/css" href="ui_setup.css">
-		]]>
-	</Content>
+	<Content type="html" href="ui_setup.html"/>
 </Module>

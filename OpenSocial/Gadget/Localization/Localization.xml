@@ -31,12 +31,12 @@
 
   </ModulePrefs>
   <Content type="html">
-    <![CDATA[      
+    <![CDATA[
         <h1>String Localization</h1>
         <p>This gadget localizes its output based on a detected locale.</p>
         <p>Adjust your browser to a different locale (English or French) and 
           reload this gadget.
-          The 'Detected Locale' and 'Greeting' will automatically change.</p>
+          The 'Detected Locale' and 'Greeting' will automatically change.</p>      
         <p>${Msg.detectedLocaleGreeting}</p>
       ]]>
   </Content>

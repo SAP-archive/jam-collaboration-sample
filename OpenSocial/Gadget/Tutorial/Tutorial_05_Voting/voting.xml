@@ -9,30 +9,5 @@
         <Require feature="wave"/>
         <Require feature="dynamic-height"/>
     </ModulePrefs>
-	<Content type="html">
-		<![CDATA[
-			<!--
-			 * STEP 2 (Implement a voting button)
-			 * - Get state and the viewer ID
-			 * - Retrieve votes from storage and convert JSON to an array of votes
-			 * - Push the viewer to the array of votes for the topic specified in the function parameter
-			 * - Convert the array to JSON and submit it to storage
-			 * 
-			 * STEP 3
-			 * - Add thumbnail rendering
-			 * - Add button rendering
-			-->
-			<script type="text/javascript" src="voting.js"></script>
-			
-			<!-- Add some basic HTML structure to our gadget-->
-			<div id="app">
-				<div id="header"><h2>OpenSocial Tutorial Tool</h2></div>
-				<div id="body"></div>
-				<div id="footer"></div>
-			</div>
-			
-			<!-- Add CSS styling to set properties for app, header, body and footer elements. -->
-			<link rel="stylesheet" type="text/css" href="voting.css">
-		]]>
-	</Content>
+    <Content type="html" href="voting.html"/>
 </Module >

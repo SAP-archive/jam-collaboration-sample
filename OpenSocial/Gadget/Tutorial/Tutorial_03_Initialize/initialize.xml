@@ -9,26 +9,5 @@
 	<ModulePrefs title="Tutorial_03_Initialize" height="250">
         <Require feature="wave"/>
     </ModulePrefs>
-	<Content type="html">
-		<![CDATA[
-			<!--
-			 * STEP 2
-			 * Add Javascript that sets callbacks and renders the gadget.
-			 * 
-			 * STEP 3
-			 * Initialize our gadget by passing init().
-			-->
-			<script type="text/javascript" src="initialize.js"></script>
-			
-			<!-- Add some basic HTML structure to our gadget-->
-			<div id="app">
-				<div id="header"><h2>OpenSocial Tutorial Tool</h2></div>
-				<div id="body"></div>
-				<div id="footer"></div>
-			</div>
-			
-			<!-- Add CSS styling to set properties for app, header, body and footer elements. -->
-			<link rel="stylesheet" type="text/css" href="initialize.css">
-		]]>
-	</Content>
+    <Content type="html" href="initialize.html"/>
 </Module>
