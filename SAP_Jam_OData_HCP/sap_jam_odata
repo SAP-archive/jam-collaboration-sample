@@ -1,7 +1,5 @@
-SystemUser=nnnn
 Type=HTTP
 TrustAll=true
-nameQualifier=www.successfactors.com
 audience=cubetree.com
 Authentication=OAuth2SAMLBearerAssertion
 Name=sap_jam_odata
