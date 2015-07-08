@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <!-- Tutorial_01_Hello_World (XML) -->
-<Module>
+<Module specificationVersion='2'>
 	<ModulePrefs title="Tutorial_01_Hello_World">
 	</ModulePrefs>
 	<Content type="html">

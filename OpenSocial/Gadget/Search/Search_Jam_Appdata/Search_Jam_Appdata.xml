@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Module>
+<Module specificationVersion='2'>
   <ModulePrefs title="Search_Jam_Appdata">
     <Require feature="osapi" />
     <Link rel="mediumIcon" href="g38.png" />

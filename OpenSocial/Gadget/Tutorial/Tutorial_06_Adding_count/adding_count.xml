@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <!-- Tutorial_06_Adding_count (XML, HTML, CSS, JavaScript) -->
-<Module>
+<Module specificationVersion='2'>
 	<!-- 
 	* STEP 1
 	* - Rename our application
