@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
  <Module specificationVersion='2'>
-   <ModulePrefs title="HCP_Lumira_URL_Gadget" height="600">
+   <ModulePrefs title="SAP Lumira URL Gadget" height="600" author="Marc Bell" description="Embeds a Lumira data visualization within an OpenSocial URL Gadget">
      <Link rel="Icon" href="icons/00_analytics_20x20.png"/>
      <Link rel="MediumIcon" href="icons/01_analytics_60x70.png"/>
      <Link rel="LargeIcon" href="icons/02_analytics_172x200.png"/>
