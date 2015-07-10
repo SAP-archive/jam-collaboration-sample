@@ -19,7 +19,6 @@ import org.apache.http.util.EntityUtils;
 import com.sap.core.connectivity.api.http.HttpDestination;
 
 import java.util.ArrayList;
-import java.net.URLEncoder;
 
 /**
  * The purpose of this Servlet class is to provide some high level examples of sample calls to the SAP Jam OData API (api/v1/OData) 
@@ -42,7 +41,6 @@ import java.net.URLEncoder;
 public class Connect extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     
-	
     /**
      * @see HttpServlet#HttpServlet()
      */

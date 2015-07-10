@@ -31,7 +31,7 @@
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>Protected Area</web-resource-name>
-      <url-pattern>/Connect</url-pattern>
+      <url-pattern>/</url-pattern>
     </web-resource-collection>
     <auth-constraint>
       <role-name>Everyone</role-name>
