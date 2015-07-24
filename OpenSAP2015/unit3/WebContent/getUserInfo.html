@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Get User Info</title>
+</head>
+<body>
+
+<form action = "getUserInfo.jsp">
+<input type = "radio" name= "function" value="/api/v1/OData/Self?$format=json" checked>Get currently logged-in user <br>
+<input type = "radio" name= "function" value="/api/v1/OData/Groups?$format=json">List of groups the current logged in user belongs to<br>
+<input type="submit" value="Run">
+</form>
+</body>
+</html>

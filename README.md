@@ -1,6 +1,16 @@
 # SAPJamSampleCode
 A collection of simple sample code containing examples that demonstrate simple API and integration workflows.
 
+### OpenSAP2015 - Unit 3
+* Source code for the Open SAP Extending your HANA Cloud Platform with Jam Week, unit 3 demo.
+  * Requirements – an account on SAP HANA Cloud Platform Trial Account with the SAP Jam developer edition enabled.
+* These Java server pages uses your SAP HANA Cloud Platform and SAP Jam instance via OAuth2SAMLBearerAssertion to:
+  * Get general information from SAP Jam about the currently logged-in user and the list of groups that user belongs to.
+  * Get group specific information from SAP Jam
+  * Create a single-use token for SAP Jam div-embedded widget authentication
+  * Create a group
+  * Create a group with a Primary External Object
+
 ### OAuth_1_HMAC-SHA1
 * Provides authentication of the SAP Jam API with OAuth1.0 and the HMAC-SHA1 signature type.
 * This example assumes a Jam deployment with an OAuth client application configured for a company, and a user that can successfully log into the company via the Web UI to authorize the OAuth client to make API requests on behalf of the user.

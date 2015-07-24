@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Get Group Info</title>
+
+</head>
+<body>
+<form action = "getGroupInfo.jsp">
+Group ID: <input type = "text" name="groupID"><br>
+<input type = "radio" name= "function" value="?$format=json" checked> Return the OData for the specified group <br>
+<input type = "radio" name= "function" value="/FeedEntries?$format=json"> Return the feed entries for the specified group <br>
+<input type = "radio" name= "function" value="/PrimaryExternalObject?$format=json"> Lists the Primary External Object for the specified group <br>
+<input type = "radio" name= "function" value="/FeaturedExternalObjects?$format=json"> List the Featured External Objects for the specified group<br>
+<input type = "submit" value="Run">
+</form>
+
+</body>
+</html>
