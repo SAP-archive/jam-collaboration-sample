@@ -1,11 +1,12 @@
-<%@page import = "org.apache.http.util.EntityUtils" %>
-<%@page import = "org.apache.http.client.methods.HttpPost" %>
-<%@page import = "org.apache.http.client.methods.HttpGet" %>
-<%@page import = "org.apache.http.client.HttpClient" %>
-<%@page import = "org.apache.http.HttpEntity" %>
-<%@page import = "com.sap.core.connectivity.api.http.HttpDestination" %>
-<%@page import = "javax.naming.Context" %>
-<%@page import = "javax.naming.InitialContext" %><%
+<%@page contentType="text/xml" 
+%><%@page import = "org.apache.http.util.EntityUtils" 
+%><%@page import = "org.apache.http.client.methods.HttpPost" 
+%><%@page import = "org.apache.http.client.methods.HttpGet" 
+%><%@page import = "org.apache.http.client.HttpClient" 
+%><%@page import = "org.apache.http.HttpEntity" 
+%><%@page import = "com.sap.core.connectivity.api.http.HttpDestination" 
+%><%@page import = "javax.naming.Context" 
+%><%@page import = "javax.naming.InitialContext" %><%
 try
 {
 	Context ctx = new InitialContext();
@@ -18,9 +19,7 @@ try
 	if ( responseEntity != null )
 	{
 		String singleUseTokenXML = EntityUtils.toString(responseEntity);
-		//out.println(singleUseTokenXML);
-		out.println("Your Single Use Token is:");
-		out.println(singleUseTokenXML.substring(61, 97));
+		out.println(singleUseTokenXML);		
 	}
 	else
 		out.println( "There was a problem with the connection");
