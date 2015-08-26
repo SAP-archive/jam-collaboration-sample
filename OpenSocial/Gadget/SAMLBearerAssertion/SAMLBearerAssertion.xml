@@ -1,0 +1,17 @@
+<Module specificationVersion='2'>
+  <!-- Jam interacting with target servers -->
+  <!-- via OpenSocial OAuth 2.0 SAML 2.0 Bearer Assertion Flow -->
+  <ModulePrefs title="SAMLBearerAssertion">
+    <Require feature="dynamic-height"/>
+    <Require feature="osapi"/>
+    <Locale lang="all">
+      <msg name="title">My Groups</msg>
+    </Locale>
+    <OAuth2>
+      <Service name="YOUR_OAUTH_SERVICE_NAME">
+        <Token url="https://CALL_TO_YOUR_ODATA_TOKEN_PROVIDER"/>
+      </Service>
+    </OAuth2>
+  </ModulePrefs>
+  <Content type="html" href="SAMLBearerAssertion.html"/>
+</Module>
