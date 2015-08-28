@@ -1,6 +1,4 @@
 <Module specificationVersion='2'>
-  <!-- Jam interacting with target servers -->
-  <!-- via OpenSocial OAuth 2.0 SAML 2.0 Bearer Assertion Flow -->
   <ModulePrefs title="SAMLBearerAssertion">
     <Require feature="dynamic-height"/>
     <Require feature="osapi"/>
@@ -9,6 +7,8 @@
     </Locale>
     <OAuth2>
       <Service name="YOUR_OAUTH_SERVICE_NAME">
+        <!-- Gadget Calling SAP Jam API -->
+        <!-- 4. Request Oauth 2.0 Access Token (SAML 2.0 Bearer Assertion) -->
         <Token url="https://CALL_TO_YOUR_ODATA_TOKEN_PROVIDER"/>
       </Service>
     </OAuth2>

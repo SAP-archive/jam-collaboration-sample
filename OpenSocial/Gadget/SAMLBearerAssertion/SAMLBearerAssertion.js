@@ -28,8 +28,14 @@
     componentDidUpdate: function(prevProps, prevState) {
       gadgets.window.adjustHeight();
     },
-    // Jam interacting with target servers
-    // via OpenSocial OAuth 2.0 SAML 2.0 Bearer Assertion Flow
+    // Gadget Calling SAP Jam API
+    // 1. Request resources (OAuth 2.0  Service Name, OData request)
+    // 7. Response (OData - JSON, XML)
+    // 
+    // gadgets.io.makeRequest Parameters
+    // AUTHORIZATION: The type of authentication to use when fetching the content.
+    // OAUTH_SERVICE_NAME: The nickname the gadget uses to refer to the OAuth <Service> element from its XML spec.
+    // CONTENT_TYPE: The type of content to retrieve at the specified URL. (Optional Parameter)
     loadGroups: function() {
       var self = this;
       gadgets.io.makeRequest("https://CALL_TO_YOUR_ODATA_SERVICE_PROVIDER",
