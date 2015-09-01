@@ -33,9 +33,14 @@
     // 7. Response (OData - JSON, XML)
     // 
     // gadgets.io.makeRequest Parameters
-    // AUTHORIZATION: The type of authentication to use when fetching the content.
-    // OAUTH_SERVICE_NAME: The nickname the gadget uses to refer to the OAuth <Service> element from its XML spec.
-    // CONTENT_TYPE: The type of content to retrieve at the specified URL. (Optional Parameter)
+    // ---------------------------------
+    // gadgets.io.makeRequest(url, callback, opt_params);
+    // url: OData Call URL
+    // callback: Callback function used to process the response.
+    // opt_params: Additional OData proxy request parameters (shown below):
+    //    AUTHORIZATION: The type of authentication to use when fetching the content.
+    //    OAUTH_SERVICE_NAME: The nickname the gadget uses to refer to the OAuth <Service> element from its XML spec.
+    //    CONTENT_TYPE: The type of content to retrieve at the specified URL.
     loadGroups: function() {
       var self = this;
       gadgets.io.makeRequest("https://CALL_TO_YOUR_ODATA_SERVICE_PROVIDER",
