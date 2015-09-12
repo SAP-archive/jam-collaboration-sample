@@ -1,0 +1,14 @@
+{
+    "Name": "createGroupPrimaryGadgetObject_JSON_05",
+    "PrimaryGadgetObject": {
+        "GroupGadget": {
+            "InitializingDataJSON": "{\"hello\": {\"a\": 1, \"b\": \"world\"}}",
+            "__metadata": {
+                "uri": "GroupGadgets('722GAyWdjluZbWpRkyz6eJ')"
+            }
+        },
+        "__metadata": {
+            "uri": "Groups('0')/PrimaryGadgetObject"
+        }
+    }
+}

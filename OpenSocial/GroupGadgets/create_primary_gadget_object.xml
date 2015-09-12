@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entry xmlns="http://www.w3.org/2005/Atom" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
+	<link href="GroupGadgets('722GAyWdjluZbWpRkyz6eJ')" rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/GroupGadget"/>
+	<content type="application/xml">
+		<m:properties>
+			<d:InitializingDataJSON>{&quot;hello&quot;:{&quot;a&quot;:1,&quot;b&quot;:&quot;world&quot;}}</d:InitializingDataJSON>
+		</m:properties>
+	</content>
+</entry>
