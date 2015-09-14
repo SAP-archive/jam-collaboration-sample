@@ -4,7 +4,7 @@
 	<link href="Groups('0')/PrimaryGadgetObject" rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/PrimaryGadgetObject">
 		<inline>
 			<entry>
-				<link href="GroupGadgets('722GAyWdjluZbWpRkyz6eJ')" rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/GroupGadget"/>
+				<link href="GroupGadgets('<ENTER_YOUR_GROUPGADGET_ID>')" rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/GroupGadget"/>
 				<content type="application/xml">
 					<m:properties>
 						<d:InitializingDataJSON>{&quot;hello&quot;:{&quot;a&quot;:1,&quot;b&quot;:&quot;world&quot;}}</d:InitializingDataJSON>
@@ -15,7 +15,7 @@
 	</link>
 	<content type="application/xml">
 		<m:properties>
-			<d:Name m:type="Edm.String">createGroupTemplatePrimaryGadgetObject_XML_04</d:Name>
+			<d:Name m:type="Edm.String"><ENTER_YOUR_GROUP_NAME></d:Name>
 		</m:properties>
 	</content>
 </entry>
