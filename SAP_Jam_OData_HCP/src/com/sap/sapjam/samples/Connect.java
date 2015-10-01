@@ -90,7 +90,7 @@ public class Connect extends HttpServlet {
 			
 			// [GET] - Require group Id - returns a URL parameter of "Id=ENTER_YOUR_ID_HERE" when groupId is null
 			allCommands.add(new Commands("Return the OData for a specific group", 
-					"GET", "api/v1/OData/Groups" + "('" + groupId + "')", "Groups", "groupId:"+groupId));
+					"GET", "api/v1/OData/Groups" + "('" + groupId + "')", "GroupsGroupId", "groupId:"+groupId));
 			allCommands.add(new Commands("Returns the primary external object for the specified group", 
 					"GET", "api/v1/OData/Groups" + "('" + groupId + "')/" + "PrimaryExternalObject", "PrimaryExternalObject", "groupId:"+groupId));
 			allCommands.add(new Commands("Returns the list of featured external objects for the group", 
