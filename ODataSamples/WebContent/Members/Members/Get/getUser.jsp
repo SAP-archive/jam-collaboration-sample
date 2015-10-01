@@ -19,7 +19,7 @@ try
 	HttpGet jamRequest = new HttpGet("/api/v1/OData/Self");
 	
 	//Setting the response format to json
-	jamRequest.addHeader("Content-Type", "application/json");
+	jamRequest.addHeader("Accept", "application/json");
 	
 	HttpEntity responseEntity = client.execute(jamRequest).getEntity();
 	if ( responseEntity != null )
