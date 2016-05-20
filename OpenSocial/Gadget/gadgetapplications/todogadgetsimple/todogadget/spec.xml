@@ -1,13 +1,13 @@
 <Module specificationVersion="2">
   <ModulePrefs title="__MSG_title__" author="__MSG_gadget_author__" height="350" width="500" description="__MSG_gadget_description__">
-    <Require feature="dynamic-height"/>
-    <Require feature="dynamic-width"/>
-    <Require feature="osapi"/>
-    <Require feature="open-views"/>
-    <Locale lang="en">
-      <msg name="title">Todo List</msg>
-      <msg name="gadget_author">SAP</msg>
-      <msg name="gadget_description">This gadget shows the ability to add/remove todo items as the user navigates through Jam and displays attributes of the following OpenSocial features: gadgets.sapjam.context, dynamic-height, dynamic-width, open-views, i18N, prefs, osapi.people, and osapi.appdata</msg>
+	<Require feature="dynamic-height"/>
+	<Require feature="dynamic-width"/>
+	<Require feature="osapi"/>
+	<Require feature="open-views"/>
+	<Locale lang="en">
+	  <msg name="title">Todo List</msg>
+	  <msg name="gadget_author">SAP</msg>
+	  <msg name="gadget_description">This gadget shows the ability to add/remove todo items as the user navigates through Jam and displays attributes of the following OpenSocial features: gadgets.sapjam.context, dynamic-height, dynamic-width, open-views, i18N, prefs, osapi.people, and osapi.appdata</msg>
   	  <msg name="create_task">Create Task</msg>
   	  <msg name="remove_completed_tasks">Remove Completed Tasks</msg>
   	  <msg name="completed_item">Completed</msg>
@@ -21,30 +21,31 @@
 		<!DOCTYPE html>
 		<html>
 		  <head>
-		    <!--
-            * STEP 1
-            * - Adjust the jQuery src filename to match the jQuery 1.x version in your gadget's vendor folder
-            --> 
-		    <script src="../vendor/jquery/jquery-1.11.1.min.js"></script>
-		    <link rel="stylesheet" type="text/css" href="../vendor/bootstrap/bootstrap.min.css"/>
-		    <link rel="stylesheet" type="text/css" href="todo_list.css"/>
+			<!--
+			* STEP 1
+			* - Adjust the jQuery src filename to match the jQuery 1.x version in your gadget's vendor/jquery folder
+			* - Adjust the Bootstrap 3.x css filename to match the Bootstrap 3.x version in your gadget's vendor/bootstrap folder
+			--> 
+			<script src="../vendor/jquery/jquery-1.11.1.min.js"></script>
+			<link rel="stylesheet" type="text/css" href="../vendor/bootstrap/bootstrap.min.css"/>
+			<link rel="stylesheet" type="text/css" href="todo_list.css"/>
 		  </head>
 		  <body>
-		    <div id="gadget">
-		      <div id="todo-list">
-		    	  <div id="action-buttons" class="input-group">
-		    	    <button id="new-todo" type="button" class="btn btn-primary">__MSG_create_task__</button>
-		            <button id="remove-completed-todos" type="button" class="btn btn-danger">__MSG_remove_completed_tasks__</button>
-		    	  </div>
-			      <div id="todo-container" class="panel panel-default">
+			<div id="gadget">
+			  <div id="todo-list">
+				  <div id="action-buttons" class="input-group">
+					<button id="new-todo" type="button" class="btn btn-primary">__MSG_create_task__</button>
+					<button id="remove-completed-todos" type="button" class="btn btn-danger">__MSG_remove_completed_tasks__</button>
+				  </div>
+				  <div id="todo-container" class="panel panel-default">
 					  <div class="panel-body">
 						<div id="todos" class="list-group"></div>
 					  </div>
-			      </div>
-		      </div>
+				  </div>
+			  </div>
 			</div>
-		    <script src="todo_list.js"></script>
-		    <script>
+			<script src="todo_list.js"></script>
+			<script>
 			   todoController.init($("#gadget"));
 			</script>
 		  </body>
@@ -54,17 +55,18 @@
 		<!DOCTYPE html>
 		<html>
 		  <head>
-		    <!--
-            * STEP 2
-            * - Adjust the jQuery src filename to match the jQuery 1.x version in your gadget's vendor folder
-            --> 
-		    <script src="../vendor/jquery/jquery-1.11.1.min.js"></script>
-		    <link rel="stylesheet" type="text/css" href="../vendor/bootstrap/bootstrap.min.css"/>
-		    <link rel="stylesheet" type="text/css" href="todo_list.css"/>
+			<!--
+			* STEP 2
+			* - Adjust the jQuery src filename to match the jQuery 1.x version in your gadget's vendor/jquery folder
+			* - Adjust the Bootstrap 3.x css filename to match the Bootstrap 3.x version in your gadget's vendor/bootstrap folder
+			-->  
+			<script src="../vendor/jquery/jquery-1.11.1.min.js"></script>
+			<link rel="stylesheet" type="text/css" href="../vendor/bootstrap/bootstrap.min.css"/>
+			<link rel="stylesheet" type="text/css" href="todo_list.css"/>
 		  </head>
 		  <body>
-		    <div id="gadget-dialog">
-		       <div id="todo-create-dialog">
+			<div id="gadget-dialog">
+			   <div id="todo-create-dialog">
 			   <input id="todo-name" type="text" class="form-control" placeholder="__MSG_task_name__">
 			   <div class="input-group-btn">
 				   <button id="save-todo" type="button" class="btn btn-primary">__MSG_save__</button>
@@ -74,9 +76,9 @@
 			</div>
 			<script >
 				/**
-			     * Adjusts the height and width of the dialog popup and sets up event listeners.
-			     */
-		    	function initGadgetDialog() {
+				 * Adjusts the height and width of the dialog popup and sets up event listeners.
+				 */
+				function initGadgetDialog() {
 					gadgets.window.adjustHeight();
 					gadgets.window.adjustWidth();
 					$('#save-todo').click(function() {
@@ -90,11 +92,11 @@
 					$('#cancel-todo').click(function() {
 						gadgets.views.close();
 					});
-		    	}
-		    	
-		    	/**
-			     * Initializes the dialog popup after receiving a notification that the page is loaded and the DOM is ready.
-			     */
+				}
+				
+				/**
+				 * Initializes the dialog popup after receiving a notification that the page is loaded and the DOM is ready.
+				 */
 				gadgets.util.registerOnLoadHandler(initGadgetDialog);
 			</script>
 		  </body>
