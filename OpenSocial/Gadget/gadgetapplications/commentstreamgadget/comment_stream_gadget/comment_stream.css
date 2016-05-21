@@ -1,0 +1,30 @@
+#draft-box {
+	width: 40%;
+	float: left;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+}
+
+#comments {
+	width: 50%;
+	float: right;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+}
+
+#drafts-and-comments {
+	margin-top: 60px;
+}
+
+#comment-options {
+	margin-top: 10px;
+	float: left;
+}
+
+.list-group-item .btn {
+	float: right;
+}
+
+.panel-default {
+	border-color: transparent;
+}

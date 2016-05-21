@@ -1,0 +1,16 @@
+<Module specificationVersion="2">
+  <ModulePrefs 
+	title="****Communication Stream between 1 gadget instance in 1 group between multiple users.*****" 
+	author="SAP"
+	height="200" 
+	description="This gadget shows the ability to contribute to a stream of comments and displays attributes of the following OpenSocial features: wave, dynamic-height, and osapi.activitystreams."
+  >
+  <Require feature="dynamic-height"/>
+  <Require feature="wave"/> 
+  <Require feature="osapi"/>
+  <Locale lang="en">
+  	<msg name="feed_add">#{obj:actor} published a new comment "#{obj:object}" to the comment stream</msg>
+  </Locale>
+  </ModulePrefs>
+  <Content type="html" href="comment_stream.html"/>
+</Module>
