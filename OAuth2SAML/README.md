@@ -22,7 +22,7 @@ This sample provides some working Java sample client code to illustrate authenti
   * SAP Jam instance (Hana Cloud Platform account):
     * https://developer.sapjam.com
   * SAP Jam instance (Your own):
-    * https://<YOUR_SAP_JAM_URL>
+    * https://\{YOUR_SAP_JAM_URL\]
 * clientKey - The SAP Jam OAuth client key:
   * SAP Jam instance (Your own or Hana Cloud Platform account):
     * http://help.sap.com/download/documentation/sapjam/developer/#opensocial/concepts/OAuth_2_SAML_Bearer_Flow_Setup_3.html
@@ -72,14 +72,14 @@ Run this project by invoking the "main" method of the OAuth2SAMLWorkflowSample c
   3. Click the "Argument's" tab
   4. Configure the "Program Arguments" Text Field:
      * Use a Hana Cloud Platform account as your SAML Trusted IDP:
-       * baseUrl=https://developer.sapjam.com clientKey=<SAP JAM OAUTH CLIENT KEY> idpId=<LOCAL PROVIDER NAME> subjectNameId=<USERNAME EMAIL ADDRESS> subjectNameIdFormat=email idpPrivateKey=<SIGNING KEY>
+       * baseUrl=https://developer.sapjam.com clientKey=\{SAP JAM OAUTH CLIENT KEY\] idpId=\{LOCAL PROVIDER NAME\] subjectNameId=\{USERNAME EMAIL ADDRESS\] subjectNameIdFormat=email idpPrivateKey=\{SIGNING KEY\]
      * Use your own Base64 encoded IDP private key and use SAP Jam as your SAML Trusted IDP:
-       * baseUrl=https://<YOUR SAP JAM URL> clientKey=<SAP JAM OAUTH CLIENT KEY> idpId=<SAP JAM SAML TRUSTED IDP> subjectNameId=<USERNAME EMAIL ADDRESS> subjectNameIdFormat=email idpPrivateKey=<BASE64 ENCODED IDP PRIVATE KEY>
+       * baseUrl=https://\{YOUR SAP JAM URL\] clientKey=\{SAP JAM OAUTH CLIENT KEY\] idpId=\{SAP JAM SAML TRUSTED IDP\] subjectNameId=\{USERNAME EMAIL ADDRESS\] subjectNameIdFormat=email idpPrivateKey=\{BASE64 ENCODED IDP PRIVATE KEY\]
   5. Configure the VM Arguments Text Field (Optional Proxy configuration):
-     * -Dhttp.proxyHost=<HTTP PROXY HOST>
-     * -Dhttp.proxyPort=<HTTP PROXY PORT>
-     * -Dhttps.proxyHost=<HTTPS PROXY HOST>
-     * -Dhttps.proxyPort=<HTTPS PROXY PORT>
+     * -Dhttp.proxyHost=\{HTTP PROXY HOST\]
+     * -Dhttp.proxyPort=\{HTTP PROXY PORT\]
+     * -Dhttps.proxyHost=\{HTTPS PROXY HOST\]
+     * -Dhttps.proxyPort=\{HTTPS PROXY PORT\]
 
 
 ### Run this Project
@@ -103,9 +103,9 @@ Here is a sample run configuration for the user blue@berry.com on a test company
 
 ### Arguments
 * Program Arguments:
-  * baseUrl=https://developer.sapjam.com clientKey=<CLIENT KEY> idpId=<IDP ID> subjectNameId=blue@berry.com subjectNameIdFormat=email idpPrivateKey=<IDP PRIVATE KEY>
+  * baseUrl=https://developer.sapjam.com clientKey=\{CLIENT KEY\] idpId=\{IDP ID\] subjectNameId=blue@berry.com subjectNameIdFormat=email idpPrivateKey=\{IDP PRIVATE KEY\]
 * VM Arguments (run in the SAP Corporate network in Vancouver)
-  * -Dhttps.proxyHost=<HTTPS PROXY HOST> -Dhttps.proxyPort=<HTTPS PROXY PORT>
+  * -Dhttps.proxyHost=\{HTTPS PROXY HOST\] -Dhttps.proxyPort=\{HTTPS PROXY PORT\]
 
 Screenshot from Eclipse run configuration:
 ![alt text](https://raw.githubusercontent.com/SAP/SAPJamSampleCode/master/OAuth2SAML/RunConfiguration.png "Run Configuration")
@@ -118,11 +118,11 @@ http.proxyHost=null
 
 http.proxyPort=null
 
-https.proxyHost=<HTTPS PROXY HOST>
+https.proxyHost=\{HTTPS PROXY HOST\]
 
-https.proxyPort=<HTTPS PROXY PORT>
+https.proxyPort=\{HTTPS PROXY PORT\]
 
-Command line arguments: {baseUrl=https://developer.sapjam.com, clientKey=<CLIENT KEY>, idpId=<IDP ID>, subjectNameId=blue@berry.com, subjectNameIdFormat=email, idpPrivateKey=<IDP PRIVATE KEY>
+Command line arguments: {baseUrl=https://developer.sapjam.com, clientKey=\{CLIENT KEY\], idpId=\{IDP ID\], subjectNameId=blue@berry.com, subjectNameIdFormat=email, idpPrivateKey=\{IDP PRIVATE KEY\]
 
 ***************************************************************
 
@@ -138,13 +138,13 @@ Signed assertion: <?xml version="1.0" encoding="UTF-8"?>
 
 <saml2:Assertion ID="S9mbIjd9-7391-a2j4-0492-m83KldMp06G3" IssueInstant="2016-05-24T21:30:29.238Z" Version="2.0" xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:xs="http://www.w3.org/2001/XMLSchema"><saml2:Issuer>bo.ilic.test.idp</saml2:Issuer><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><ds:Reference URI="#S9mbIjd9-7391-a2j4-0492-m83KldMp06G3"><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/><ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"><ec:InclusiveNamespaces PrefixList="xs" xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#"/></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><ds:DigestValue>JK3wsqeaWOYrB+Nwmq9gmQJK4E0=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue>kjh2werVBSWe456409scxkljsldfSDFJ3Vlkn+lkjsdflkj/LKjslkjl909asdz/kizcFDSOInhjhsdf+lkjlbxkjvcx98dbxcbc/sdflkjIDUFSUQWE+xcvjlxerEWRaLKSJVSLKJSV3432/SDFLKJXL092809809fsbj+lkjcblkjxwu32nlvjnds09u09cuvi890u78+lhsblhlk231423/Slkvchxlvk234lkjslkfdspoibv+098XCXZCdbvcxbc+sdflkjhlkj3wrnvs/987xbzoisufmnwDVDSFDSFD+89oiuhwac09809LJLKJx09KJLKJpwqexcv3Zsdf==</ds:SignatureValue></ds:Signature><saml2:Subject><saml2:NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress">blue@berry.com</saml2:NameID><saml2:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer"><saml2:SubjectConfirmationData NotOnOrAfter="2016-05-24T21:40:29.238Z" Recipient="https://developer.sapjam.com/api/v1/auth/token"/></saml2:SubjectConfirmation></saml2:Subject><saml2:Conditions NotBefore="2016-05-24T21:20:29.238Z" NotOnOrAfter="2016-05-24T21:40:29.238Z"><saml2:AudienceRestriction><saml2:Audience>cubetree.com</saml2:Audience></saml2:AudienceRestriction></saml2:Conditions><saml2:AttributeStatement><saml2:Attribute Name="client_id"><saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">j23DSF65dkj402DS3nz1</saml2:AttributeValue></saml2:Attribute></saml2:AttributeStatement></saml2:Assertion>
 
-Request body: client_id=<CLIENT ID>&grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Asaml2-bearer&assertion=<ASSERTION>
+Request body: client_id=\{CLIENT ID\]&grant_type=urn%3Aietf%3Aparams%3Aoauth%3Agrant-type%3Asaml2-bearer&assertion=\{ASSERTION\]
 
 HTTP response code: 200
 
-Response body: {"access_token":<ACCESS TOKEN>}
+Response body: {"access_token":\{ACCESS TOKEN\]}
 
-OAuth access token: <OAUTH ACCESS TOKEN>
+OAuth access token: \{OAUTH ACCESS TOKEN\]
 
 
 # License
