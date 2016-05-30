@@ -108,7 +108,7 @@ Here is a sample run configuration for the user blue@berry.com on a test company
   * -Dhttps.proxyHost=<HTTPS PROXY HOST> -Dhttps.proxyPort=<HTTPS PROXY PORT>
 
 Screenshot from Eclipse run configuration:
-![Alt](/RunConfiguration.png "Run Configuration")
+![alt text](https://raw.githubusercontent.com/SAP/SAPJamSampleCode/master/OAuth2SAML/RunConfiguration.png "Run Configuration")
 
 
 ### Program output
