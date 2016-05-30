@@ -1,6 +1,10 @@
 # SAPJamSampleCode
 A collection of simple sample code containing examples that demonstrate simple API and integration workflows.
 
+### Jam OAuth2 Access Token from SAML Bearer Assertion Sample
+* This sample provides some working Java sample client code to illustrate authentication of the SAP Jam API using an OAuth2 access token obtained from a SAML2 bearer assertion as described here:
+  * http://help.sap.com/download/documentation/sapjam/developer/#odata/concepts/Auth-OAuth2andSAMLBearerAssertions.html
+
 ### OpenSAP2015 - Unit 3
 * Source code for the Open SAP Extending your HANA Cloud Platform with Jam Week, unit 3 demo.
   * Requirements – an account on SAP HANA Cloud Platform Trial Account with the SAP Jam developer edition enabled.
