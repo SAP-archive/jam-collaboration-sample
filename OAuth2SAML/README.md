@@ -49,7 +49,7 @@ This sample provides some working Java sample client code to illustrate authenti
         2. Copy all content in the "Signing Key" text field
         3. Click "Save"
   * SAP Jam instance (Your own or Hana Cloud Platform account):
-    1. Warning: Do not use this if SAP Jam already has integrations that SAP Jam as a "SAML Local Identity Provider". This will break existing integrations
+    1. **Warning:** Do not use this if SAP Jam already has integrations that SAP Jam as a "SAML Local Identity Provider". This will break existing integrations
     2. Select "Admin" > "Integrations" > "SAML Local Identity Provider"
     3. Click "Generate Key Pair"
     4. Copy all content in the "Signing Private Key (Base64)" text field
