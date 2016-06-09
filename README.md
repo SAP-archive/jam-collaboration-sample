@@ -61,7 +61,7 @@ A collection of simple sample code containing examples that demonstrate simple A
 * Source is located here:
   * https://github.com/SAP/SAPJamSampleCode/tree/master/SAP_Jam_OData_HCP
 * Source code for the "Using the SAP Jam API to access data in Jam via OData" tutorial in the "SAP Jam Developer Guide".
-  * http://help.sap.com/download/documentation/sapjam/developer/index.html#hcp/concepts/INTRO-API_integrate_features_data.html
+  * http://help.sap.com/download/documentation/sapjam/developer/index.html#hcp/concepts/ADVANCED_TOPICS-API_integrate_features_data.html
   * Requirements - An account on a SAP Jam instance and an associated SAP HANA Cloud Platform trial account.
 * This Java servlet uses your SAP HANA Cloud Platform and SAP Jam instance via OAuth2SAMLBearerAssertion to:
   * Get general information from SAP Jam about the currently logged-in user and the list of groups that user belongs to.
