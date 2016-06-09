@@ -17,7 +17,7 @@ function vote(topicId){
 	    // Convert the array to JSON and submit it to storage
 	    state.submitDelta({'votes' : toJSON(votes)});             
     }else{
-        var message = new gadgets.MiniMessage(__MODULE_ID__);
+        var message = new gadgets.MiniMessage(prefs.getModuleId());
         message.createDismissibleMessage("Cannot vote for the same topic more than once!");
         gadgets.window.adjustHeight();
     }
