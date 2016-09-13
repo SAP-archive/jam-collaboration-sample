@@ -81,6 +81,8 @@ A collection of simple sample code containing examples that demonstrate simple A
 * The related documentation is located at: http://help.sap.com/download/documentation/sapjam/developer/index.html#hcp/concepts/INTRO-embeddable_widgets.html
 
 ### Webhooks Sample
+* Source is located here:
+  * https://github.com/SAP/SAPJamSampleCode/tree/master/Webhooks/Java/JamWebHooksTester4j
 * Source code for the "Webhooks" tutorial in the "SAP Jam Developer Guide".
   * Requirements - An account on a SAP Jam instance and an associated SAP HANA Cloud Platform trial account.
 * This Java EE server implements a simple endpoint for SAP Jam Push Notifications to use as a callback URL.
