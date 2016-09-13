@@ -1,6 +1,7 @@
 # SAPJamSampleCode
 A collection of simple sample code containing examples that demonstrate simple API and integration workflows.
 
+
 ### Jam OAuth2 Access Token from SAML Bearer Assertion Sample
 * Source and documentation are located here:
   * https://github.com/SAP/SAPJamSampleCode/tree/master/OAuth2SAML
@@ -68,7 +69,6 @@ A collection of simple sample code containing examples that demonstrate simple A
   * Get group specific information from SAP Jam.
   * Create a single-use token for SAP Jam div-embedded widget authentication.
 
-
 ### Widgets/Div/Feed
 * Source is located here:
   * https://github.com/SAP/SAPJamSampleCode/tree/master/Widgets/Div/Feed
@@ -79,6 +79,11 @@ A collection of simple sample code containing examples that demonstrate simple A
   * SAP Jam session with Sign In
   * SAP Jam session with Sign In pop-up
 * The related documentation is located at: http://help.sap.com/download/documentation/sapjam/developer/index.html#hcp/concepts/INTRO-embeddable_widgets.html
+
+### Webhooks Sample
+* Source code for the "Webhooks" tutorial in the "SAP Jam Developer Guide".
+  * Requirements - An account on a SAP Jam instance and an associated SAP HANA Cloud Platform trial account.
+* This Java EE server implements a simple endpoint for SAP Jam Push Notifications to use as a callback URL.
 
 
 # License
