@@ -1,4 +1,6 @@
 ### Webhooks WAR File Sample
+* WAR file is located here:
+  * https://github.com/SAP/SAPJamSampleCode/tree/master/Webhooks/Java/SAPJamSampleWebhooksServer
 * WAR file for the "Webhooks - WAR file" tutorial in the "SAP Jam Developer Guide".
   * Requirements - An account on a SAP Jam instance and an associated SAP HANA Cloud Platform trial account.
 * This Java EE server implements a simple endpoint for SAP Jam Push Notifications to use as a callback URL.
