@@ -1,7 +1,5 @@
-### Webhooks Sample
-* Source is located here:
-  * https://github.com/SAP/SAPJamSampleCode/tree/master/Webhooks/Java/JamWebHooksTester4j
-* Source code for the "Webhooks - Alias Users" and "Webhooks - Groups" tutorial in the "SAP Jam Developer Guide".
+### Webhooks WAR File Sample
+* WAR file for the "Webhooks - WAR file" tutorial in the "SAP Jam Developer Guide".
   * Requirements - An account on a SAP Jam instance and an associated SAP HANA Cloud Platform trial account.
 * This Java EE server implements a simple endpoint for SAP Jam Push Notifications to use as a callback URL.
 
