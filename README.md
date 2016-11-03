@@ -40,7 +40,7 @@ A collection of simple sample code containing examples that demonstrate simple A
 
 ### ODATA API Integration with iOS Swift 2.x
 * Source is located here:
-  * https://github.com/SAP/SAPJamSampleCode/tree/master/iOS_Integrations/mobile-sdk-ios/Swift 2.x
+  * https://github.com/SAP/SAPJamSampleCode/tree/master/iOS_Integrations/mobile-sdk-ios/Swift%202.x
 * Source code for the "ODATA API Integration with iOS Swift 2.x" tutorial in the "SAP Jam Collaboration Mobile Developer Guide".
 
 ### OpenSocial/Gadget/HCP_Lumira
@@ -116,7 +116,7 @@ A collection of simple sample code containing examples that demonstrate simple A
 
 ### WebView HTML5 Client Integration with iOS Swift 2.x
 * Source is located here:
-  * https://github.com/SAP/SAPJamSampleCode/tree/master/iOS_Integrations/mobile-sdk-ios/Swift 2.x
+  * https://github.com/SAP/SAPJamSampleCode/tree/master/iOS_Integrations/mobile-sdk-ios/Swift%202.x
 * Source code for the "WebView HTML5 Client Integration with iOS Swift 2.x" tutorial in the "SAP Jam Collaboration Mobile Developer Guide".
 
 
