@@ -1,0 +1,35 @@
+{ 
+  "from": {
+    "host": "https://developer.sapjam.com",
+    "proxy_host":"proxy.example",
+    "proxy_port":"",
+    "client_id":"",
+    "client_secret": "",
+    "grant_type0":"client_credentials",
+    "grant_type":"urn:ietf:params:oauth:grant-type:saml2-bearer",
+    "company_uuid": "",
+    "group_uuids": "",
+    "group_admin_email": "",
+    "saml":{
+      "idp":"",
+      "idp_private_key":"",
+      "sp_id":""
+    }
+  },
+  "to": {
+    "host": "https://developer.sapjam.com",
+    "proxy_host":"proxy.example",
+    "proxy_port":"",
+    "group_admin_email": "",
+    "suppress_notification": false,
+    "client_id":"",
+    "client_secret": "",
+    "grant_type":"urn:ietf:params:oauth:grant-type:saml2-bearer",
+    "company_uuid": "",
+    "saml":{
+      "idp":"",
+      "idp_private_key":"",
+      "sp_id":""
+    }
+  }
+}

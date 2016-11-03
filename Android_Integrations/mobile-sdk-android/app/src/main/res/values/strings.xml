@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Mobile-SDK-Android</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_jam_groups_list">Groups List</string>
+    <string name="title_activity_jam_feed_widget">Feed</string>
+    <string name="title_activity_jam_welcome">SAP Jam</string>
+</resources>
