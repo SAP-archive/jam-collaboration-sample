@@ -24,7 +24,11 @@ To configure the sample app to sync from one SAP Jam instance to another SAP Jam
    - the user used in the source configuration must be a group administrator
    - the user used in both the source and destination configurations must be company administrators 
 3. Install the maven dependencies using ```mvn clean install``` from the jam_java_odata_api_sync_client_sample/JamSyncApp directory.
-4. Launch and run JamSyncApp.java
+4. The servlet can be run from an IDE or the command line as follows:
+	- IDE: Launch and run JamSyncApp.java
+	- Command line:
+		1. Package the file as a jar using mvn package
+		2. Run the jar from the JamSyncApp/target directory using "java -jar jam_java_odata_api_sync_client_sample-0.0.1-SNAPSHOT"
     
 You should see members and groups sync with the destination JAM instance. 
 
