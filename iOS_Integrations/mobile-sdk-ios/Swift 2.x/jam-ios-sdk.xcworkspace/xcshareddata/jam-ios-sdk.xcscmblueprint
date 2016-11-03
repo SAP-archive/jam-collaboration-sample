@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0D2363DF87C1B3CE9B45256A2C17A1F20A033F18",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0D2363DF87C1B3CE9B45256A2C17A1F20A033F18" : 0,
+    "AA2DB2F62E9DDD635AED9749AB87E7F97885CC00" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A549F3CF-77B9-48E6-A0FA-B26ECD100E0E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0D2363DF87C1B3CE9B45256A2C17A1F20A033F18" : "mobile-sdk-ios\/",
+    "AA2DB2F62E9DDD635AED9749AB87E7F97885CC00" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "jam-ios-sdk",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "jam-ios-sdk.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.wdf.sap.corp\/sap-jam\/mobile-sdk-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0D2363DF87C1B3CE9B45256A2C17A1F20A033F18"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SAP\/SAPJamSampleCode.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AA2DB2F62E9DDD635AED9749AB87E7F97885CC00"
+    }
+  ]
+}
