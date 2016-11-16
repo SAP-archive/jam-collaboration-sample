@@ -37,11 +37,13 @@ A collection of simple sample code containing examples that demonstrate simple A
 * Source is located here:
   * https://github.com/SAP/SAPJamSampleCode/tree/master/Android_Integrations/mobile-sdk-android
 * Source code for the "ODATA API Integration with Android" tutorial in the "SAP Jam Collaboration Mobile Developer Guide".
+* The related documentation is located at: http://help.sap.com/download/documentation/sapjam/sap_jam_mobile_developer_help/index.html#f4ab0401001746eba19c6934e937685f.html
 
 ### ODATA API Integration with iOS Swift 2.x
 * Source is located here:
   * https://github.com/SAP/SAPJamSampleCode/tree/master/iOS_Integrations/mobile-sdk-ios/Swift%202.x
 * Source code for the "ODATA API Integration with iOS Swift 2.x" tutorial in the "SAP Jam Collaboration Mobile Developer Guide".
+* The related documentation is located at: http://help.sap.com/download/documentation/sapjam/sap_jam_mobile_developer_help/index.html#3283220b3f7d4287a1baf34f8ac433de.html
 
 ### OpenSocial/Gadget/HCP_Lumira
 * Source is located here:
@@ -101,6 +103,9 @@ A collection of simple sample code containing examples that demonstrate simple A
 * Source code for the "Webhooks - Alias Users" and "Webhooks - Groups" tutorial in the "SAP Jam Developer Guide".
   * Requirements - An account on a SAP Jam instance and an associated SAP HANA Cloud Platform trial account.
 * This Java EE server implements a simple endpoint for SAP Jam Push Notifications to use as a callback URL.
+* The related documentation is located at:
+  * http://help.sap.com/download/documentation/sapjam/developer/index.html#a711035f7d824819a38764b530e0b5a9.html
+  * http://help.sap.com/download/documentation/sapjam/developer/index.html#2e53b94ae1af43ca97c343a2bba684eb.html
 
 ### Webhooks WAR File Sample
 * WAR file is located here:
@@ -108,16 +113,21 @@ A collection of simple sample code containing examples that demonstrate simple A
 * WAR file for the "Webhooks - Alias Users - WAR file" and "Webhooks - Groups - WAR file" tutorial in the "SAP Jam Developer Guide".
   * Requirements - An account on a SAP Jam instance and an associated SAP HANA Cloud Platform trial account.
 * This Java EE server implements a simple endpoint for SAP Jam Push Notifications to use as a callback URL.
+* The related documentation is located at:
+  * http://help.sap.com/download/documentation/sapjam/developer/index.html#9ad5bea5f6884699a4f1a07be9b07e2c.html
+  * http://help.sap.com/download/documentation/sapjam/developer/index.html#c35773a76b7846e0aa9f432919374b63.html
 
 ### WebView HTML5 Client Integration with Android
 * Source is located here:
   * https://github.com/SAP/SAPJamSampleCode/tree/master/Android_Integrations/mobile-sdk-android
 * Source code for the "WebView HTML5 Client Integration with Android" tutorial in the "SAP Jam Collaboration Mobile Developer Guide".
+* The related documentation is located at: http://help.sap.com/download/documentation/sapjam/sap_jam_mobile_developer_help/index.html#d52503114d4d4cfb92e40443e312ba23.html
 
 ### WebView HTML5 Client Integration with iOS Swift 2.x
 * Source is located here:
   * https://github.com/SAP/SAPJamSampleCode/tree/master/iOS_Integrations/mobile-sdk-ios/Swift%202.x
 * Source code for the "WebView HTML5 Client Integration with iOS Swift 2.x" tutorial in the "SAP Jam Collaboration Mobile Developer Guide".
+* The related documentation is located at: http://help.sap.com/download/documentation/sapjam/sap_jam_mobile_developer_help/index.html#2b06ee38ed704834a1cf4fac4a2732c4.html
 
 
 # License
