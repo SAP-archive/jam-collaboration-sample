@@ -75,7 +75,7 @@ import org.w3c.dom.Element;
 /**
  * This class provides some working Java sample client code to illustrate authentication of the SAP Jam API
  * using an OAuth2 access token obtained from a SAML2 bearer assertion as described here:
- * http://help.sap.com/download/documentation/sapjam/developer/#odata/concepts/Auth-OAuth2andSAMLBearerAssertions.html
+ * http://help.sap.com/download/documentation/sapjam/developer/index.html#c6813927839541a19e4703c3a2564f1b.html
  * 
  * This example assumes a Jam deployment with an OAuth client application and a SAML Trusted IDP configured 
  * for the company.
