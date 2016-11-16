@@ -14,7 +14,7 @@ This sample provides some working Java sample client code to illustrate authenti
     * https://build.shibboleth.net/nexus/content/repositories/releases/org/opensaml/opensaml/2.6.6/opensaml-2.6.6-bin.zip
 5. Extract the zip file and place the files in the project folder ( ../OAuth2SAML/Java/GetOAuth2AccessToken/jam_java_oauth2_saml_client_sample )
 6. Setup an OAuth client in SAP Jam:
-    * http://help.sap.com/download/documentation/sapjam/developer/#opensocial/concepts/OAuth_2_SAML_Bearer_Flow_Setup_3.html
+    * http://help.sap.com/download/documentation/sapjam/developer/index.html#9f86d35bb9594635bd505063bbe76830.html
 
 
 ### Configure Required Keys
@@ -25,7 +25,7 @@ This sample provides some working Java sample client code to illustrate authenti
     * https://\{YOUR_SAP_JAM_URL\}
 * clientKey - The SAP Jam OAuth client key:
   * SAP Jam instance (Your own or Hana Cloud Platform account):
-    * http://help.sap.com/download/documentation/sapjam/developer/#opensocial/concepts/OAuth_2_SAML_Bearer_Flow_Setup_3.html
+    * http://help.sap.com/download/documentation/sapjam/developer/index.html#9f86d35bb9594635bd505063bbe76830.html
 * idpId - Identifier for the SAML trusted IDP:
   * Hana Cloud Platform account:
     1. Select "Trust" > "Trust Management"
@@ -104,7 +104,7 @@ Here is a sample run configuration for the user blue@berry.com on a test company
 ### Arguments
 * Program Arguments:
   * baseUrl=https://developer.sapjam.com clientKey=\{CLIENT KEY\} idpId=\{IDP ID\} subjectNameId=blue@berry.com subjectNameIdFormat=email idpPrivateKey=\{IDP PRIVATE KEY\}
-* VM Arguments (run in the SAP Corporate network in Vancouver)
+* VM Arguments
   * -Dhttps.proxyHost=\{HTTPS PROXY HOST\} -Dhttps.proxyPort=\{HTTPS PROXY PORT\}
 
 Screenshot from Eclipse run configuration:
