@@ -46,7 +46,7 @@ A collection of simple sample code containing examples that demonstrate simple A
 ### OpenSocial/Gadget/HCP_Lumira
 * Source is located here:
   * https://github.com/SAP/SAPJamSampleCode/tree/master/OpenSocial/Gadget/HCP_Lumira
-* Source code for the OpenSocial gadget in "Using OpenSocial gadgets with SAP Jam on SAP HANA Cloud Platform" in the "SAP Jam Developer Guide".
+* Source code for the OpenSocial gadget in "Integrate OpenSocial Gadgets into SAP Jam Collaboration" in the "SAP Jam Developer Guide".
 * The related documentation is located at: http://help.sap.com/download/documentation/sapjam/developer/index.html#1c2351040fe04d59b54d079256b20dbe.html
 
 ### OpenSocial/Gadget/Localization
@@ -58,13 +58,13 @@ A collection of simple sample code containing examples that demonstrate simple A
 ### OpenSocial/Gadget/Search/Search_Jam_Appdata
 * Source is located here:
   * https://github.com/SAP/SAPJamSampleCode/tree/master/OpenSocial/Gadget/Search/Search_Jam_Appdata
-* Source code for the OpenSocial gadget in "Adding OpenSocial Gadget Data to SAP Jam Search" in the "SAP Jam Developer Guide".
+* Source code for the OpenSocial gadget in "Add Gadget Data to Jam Search" in the "SAP Jam Developer Guide".
 * The related documentation is located at: http://help.sap.com/download/documentation/sapjam/developer/index.html#bf846daa778445a0a1ddd5698ce2a147.html
 
 ### OpenSocial/Gadget/Tutorial
 * Source is located here:
   * https://github.com/SAP/SAPJamSampleCode/tree/master/OpenSocial/Gadget/Tutorial
-* Source code required for completing the "SAP Jam OpenSocial Tutorial" in the "SAP Jam Developer Guide".
+* Source code required for completing the "SAP Jam Collaboration OpenSocial Tutorials" in the "SAP Jam Developer Guide".
 * The "SAP Jam OpenSocial Tutorial" is a set of 7 lessons for developing a simple SAP Jam OpenSocial gadget.
 * This tutorial is located at: http://help.sap.com/download/documentation/sapjam/developer/index.html#9d304bf736cd4514bba2b42393a09ec6.html
 
@@ -76,7 +76,7 @@ A collection of simple sample code containing examples that demonstrate simple A
 ### SAP_Jam_OData_HCP
 * Source is located here:
   * https://github.com/SAP/SAPJamSampleCode/tree/master/SAP_Jam_OData_HCP
-* Source code for the "Using the SAP Jam API to access data in Jam via OData" tutorial in the "SAP Jam Developer Guide".
+* Source code for the "Integrations using SAP Jam API for applications on SAP HANA Cloud Platform" tutorial in the "SAP Jam Developer Guide".
   * http://help.sap.com/download/documentation/sapjam/developer/index.html#033db47cbaa6404cbb8c2e53a220964d.html
   * Requirements - An account on a SAP Jam instance and an associated SAP HANA Cloud Platform trial account.
 * This Java servlet uses your SAP HANA Cloud Platform and SAP Jam instance via OAuth2SAMLBearerAssertion to:
@@ -87,7 +87,7 @@ A collection of simple sample code containing examples that demonstrate simple A
 ### Widgets/Div/Feed
 * Source is located here:
   * https://github.com/SAP/SAPJamSampleCode/tree/master/Widgets/Div/Feed
-* Source code for the SAP Jam div-embedded feed widgets in "Using SAP Jam with embeddable widgets" in the "SAP Jam Developer Guide". These feed widgets demonstrate the following authentication types:
+* Source code for the SAP Jam div-embedded feed widgets in "Integrate Embeddable Widgets into SAP Jam Collaboration" in the "SAP Jam Developer Guide". These feed widgets demonstrate the following authentication types:
   * SuccessFactors IdentityProvider
   * Single Use Token
   * Pre-existing SAP Jam session
