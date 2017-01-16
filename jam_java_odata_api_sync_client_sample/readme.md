@@ -1,6 +1,6 @@
 # SAP Jam Java Data Api Sync Client Sample
 
-The jam_java_odata_api_sync_client_sample app demonstrates how to download content from one instance of SAP JAM and upload the content to another instance of SAP JAM.
+The jam_java_odata_api_sync_client_sample app demonstrates how to download content from one instance of SAP Jam and upload the content to another instance of SAP Jam.
 
 ### Supported Content
 The types of content which this sample app accounts for are:
@@ -30,13 +30,13 @@ To configure the sample app to sync from one SAP Jam instance to another SAP Jam
 		1. Package the file as a jar using ```mvn package```
 		2. Run the jar from the JamSyncApp/target directory using "java -jar jam_java_odata_api_sync_client_sample-0.0.1-SNAPSHOT"
     
-You should see members and groups sync with the destination JAM instance. 
+You should see members and groups sync with the destination Jam instance. 
 
 ### Limitations:
 1. Subgroups are not handled.
 2. Contents that do not have API endpoints, such as overview layout pages and polls, will be skipped and not handled.
 3. Only content that is your own uploaded or created content can be synced. Groups with auto generated contents like "Pro-con tables", etc. will not work.
-4. Replies to contents are synced when their target content is synced and not in the absolute order they were posted in. Since the Feed Updates wall is sorted by latest activity (ie. last commented on, liked), content on this wall may be out of order for groups in the destination JAM instance. 
+4. Replies to contents are synced when their target content is synced and not in the absolute order they were posted in. Since the Feed Updates wall is sorted by latest activity (ie. last commented on, liked), content on this wall may be out of order for groups in the destination Jam instance. 
 
 
 
