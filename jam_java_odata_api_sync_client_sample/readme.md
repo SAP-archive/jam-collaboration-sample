@@ -1,6 +1,6 @@
-# SAP Jam Java Data Api Sync Client Sample
+# SAP Jam Collaboration Java Data Api Sync Client Sample
 
-The jam_java_odata_api_sync_client_sample app demonstrates how to download content from one instance of SAP Jam and upload the content to another instance of SAP Jam.
+The jam_java_odata_api_sync_client_sample app demonstrates how to download content from one instance of SAP Jam Collaboration and upload the content to another instance of SAP Jam Collaboration.
 
 ### Supported Content
 The types of content which this sample app accounts for are:
@@ -11,16 +11,16 @@ The types of content which this sample app accounts for are:
 - Forum Discussion, comment, and replies
 
 ### Assumptions:
-1. Both instances of SAP Jam have the same users provisioned with the same credentials and permissions
+1. Both instances of SAP Jam Collaboration have the same users provisioned with the same credentials and permissions
 2. Apache Maven is installed on your machine
 
 ### Configuration: 
-To configure the sample app to sync from one SAP Jam instance to another SAP Jam instance, please use the following steps:
+To configure the sample app to sync from one SAP Jam Collaboration instance to another SAP Jam Collaboration instance, please use the following steps:
 
-1. As a company admin in SAP Jam you need to:
+1. As a company admin in SAP Jam Collaboration you need to:
    - create a "SAML Trusted IDP" under the "Admin" > "SAML Trusted IDPs" admin page. You will need the X509 Certificate (Base64) parameter for the idp_private_key configuration parameter.
    - create an "OAuth client" under the "Admin" > "OAuth clients" admin page. You will need the key and secret for the client_id and client_secret configuration parameters.
-2. Fill out the "config.json" file with the configuration information for the from and to (source and destination) SAP Jam instances. The following conditions apply:
+2. Fill out the "config.json" file with the configuration information for the from and to (source and destination) SAP Jam Collaboration instances. The following conditions apply:
    - the user used in the source configuration must be a group administrator
    - the user used in both the source and destination configurations must be company administrators 
 3. Install the maven dependencies using ```mvn clean install``` from the jam_java_odata_api_sync_client_sample/JamSyncApp directory.
@@ -30,13 +30,13 @@ To configure the sample app to sync from one SAP Jam instance to another SAP Jam
 		1. Package the file as a jar using ```mvn package```
 		2. Run the jar from the JamSyncApp/target directory using "java -jar jam_java_odata_api_sync_client_sample-0.0.1-SNAPSHOT"
     
-You should see members and groups sync with the destination Jam instance. 
+You should see members and groups sync with the destination SAP Jam Collaboration instance. 
 
 ### Limitations:
 1. Subgroups are not handled.
 2. Contents that do not have API endpoints, such as overview layout pages and polls, will be skipped and not handled.
 3. Only content that is your own uploaded or created content can be synced. Groups with auto generated contents like "Pro-con tables", etc. will not work.
-4. Replies to contents are synced when their target content is synced and not in the absolute order they were posted in. Since the Feed Updates wall is sorted by latest activity (ie. last commented on, liked), content on this wall may be out of order for groups in the destination Jam instance. 
+4. Replies to contents are synced when their target content is synced and not in the absolute order they were posted in. Since the Feed Updates wall is sorted by latest activity (ie. last commented on, liked), content on this wall may be out of order for groups in the destination SAP Jam Collaboration instance. 
 
 
 
