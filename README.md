@@ -1,6 +1,10 @@
 # SAPJamSampleCode
 A collection of simple sample code containing examples that demonstrate simple API and integration workflows.
 
+### Hana Cloud Platform Web IDE and Jam Widget Samples
+* Source is located here:
+  * https://github.com/SAP/SAPJamSampleCode/tree/master/hcp_samples
+* These samples demonstrate how to use Hana Cloud Platform Web IDE with Jam Widgets (Feed, Forum and Group).
 
 ### Jam OAuth2 Access Token from SAML Bearer Assertion Sample
 * Source and documentation are located here:
