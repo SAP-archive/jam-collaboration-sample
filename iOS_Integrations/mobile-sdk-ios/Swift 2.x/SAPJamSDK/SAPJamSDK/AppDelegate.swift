@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        // Uses Key and Secret from your Hana Cloud Platform Jam instance's OAuth Client to perform OAuth 1.0a authentication
+        // Uses Key and Secret from your SAP Cloud Platform Jam instance's OAuth Client to perform OAuth 1.0a authentication
         JamAuthConfig.sharedInstance.configure("developer.sapjam.com",
                                                key: "<Oauth client key>",
                                                secret: "<Oauth client secret>")

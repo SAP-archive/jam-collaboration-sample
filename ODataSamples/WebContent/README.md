@@ -1,7 +1,7 @@
 ### ODataSamples
 * Source code examples on how to use the OData API for SAP Jam
-  * Requirements - an account on SAP HANA Cloud Platform Trial Account with the SAP Jam developer edition enabled.
-* These Java server pages uses your SAP HANA Cloud Platform and SAP Jam instance via OAuth2SAMLBearerAssertion to:
+  * Requirements - an account on SAP Cloud Platform Trial Account with the SAP Jam developer edition enabled.
+* These Java server pages uses your SAP Cloud Platform and SAP Jam instance via OAuth2SAMLBearerAssertion to:
   * Work with the Group end point
   * Work with the Member end point
   * Work with the Task end point

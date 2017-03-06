@@ -31,9 +31,9 @@ import com.sap.core.connectivity.api.http.HttpDestination;
  * This API uses the OData v2.0 specifications. For more details, visit:
  * http://www.odata.org/documentation/odata-version-2-0/
  * 
- * You will need an account on a SAP Jam  instance and an associated HCP trial account to run these samples.
+ * You will need an account on a SAP Jam  instance and an associated SAP Cloud Platform trial account to run these samples.
  * 
- *  This Java HCP project requires a Java destination called sap_jam_odata. This file can be found in the root of this project. 
+ *  This Java SAP Cloud Platform project requires a Java destination called sap_jam_odata. This file can be found in the root of this project. 
  * 
  * *  For more information about the SAP Jam API see: http://help.sap.com/download/documentation/sapjam/developer/index.html
  *  
@@ -66,8 +66,8 @@ public class WriteExternalBusinessObjectEvents extends HttpServlet {
 			PrintWriter out = response.getWriter();
 			
 			try {
-				// Code to retrieve the Java HCP Destination.
-				// The HCP Destination handles the SAML2OAuthBearer Assertion workflow.
+				// Code to retrieve the Java SAP Cloud Platform Destination.
+				// The SAP Cloud Platform Destination handles the SAML2OAuthBearer Assertion workflow.
 				Context ctx = new InitialContext();
 				HttpDestination destination = (HttpDestination)ctx.lookup("java:comp/env/sap_jam_odata");
 				HttpClient client = destination.createHttpClient();

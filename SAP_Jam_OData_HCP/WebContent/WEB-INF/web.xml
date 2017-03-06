@@ -38,7 +38,7 @@
     </auth-constraint>
   </security-constraint>
   <security-role>
-    <description>All SAP HANA Cloud Platform users</description>
+    <description>All SAP Cloud Platform users</description>
     <role-name>Everyone</role-name>
   </security-role>
   <servlet>

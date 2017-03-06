@@ -19,27 +19,27 @@ This sample provides some working Java sample client code to illustrate authenti
 
 ### Configure Required Keys
 * baseUrl - The base url of the Jam site:
-  * SAP Jam instance (Hana Cloud Platform account):
+  * SAP Jam instance (SAP Cloud Platform account):
     * https://developer.sapjam.com
   * SAP Jam instance (Your own):
     * https://\{YOUR_SAP_JAM_URL\}
 * clientKey - The SAP Jam OAuth client key:
-  * SAP Jam instance (Your own or Hana Cloud Platform account):
+  * SAP Jam instance (Your own or SAP Cloud Platform account):
     * http://help.sap.com/download/documentation/sapjam/developer/index.html#9f86d35bb9594635bd505063bbe76830.html
 * idpId - Identifier for the SAML trusted IDP:
-  * Hana Cloud Platform account:
+  * SAP Cloud Platform account:
     1. Select "Trust" > "Trust Management"
     2. Copy all content in the "Local Provider Name" text field
-  * SAP Jam instance (Your own or Hana Cloud Platform account): 
+  * SAP Jam instance (Your own or SAP Cloud Platform account): 
     1. Select "Admin" > "Integrations" > "SAML Local Identity Provider"
     2. Copy all content in the "Issuer" text field
 * subjectNameId - The identifier for the user. Can be an email address or a unique identifier, depending on the company type:
-  * SAP Jam instance (Your own or Hana Cloud Platform account):
+  * SAP Jam instance (Your own or SAP Cloud Platform account):
     1. Select "Admin" > "Users" > "Users & Member Lists"
     2. Copy an email address in the "Email" column
 * subjectNameIdFormat - "email" or "unspecified"
 * idpPrivateKey - Generate a Base64 encoded IDP private key:
-  * Hana Cloud Platform account:
+  * SAP Cloud Platform account:
     1. Select "Trust" > "Local Service Provider"
     2. Click "Edit"
     3. Select "Configuration Type" > "Custom"
@@ -48,7 +48,7 @@ This sample provides some working Java sample client code to illustrate authenti
         1. Click "Generate Key Pair"
         2. Copy all content in the "Signing Key" text field
         3. Click "Save"
-  * SAP Jam instance (Your own or Hana Cloud Platform account):
+  * SAP Jam instance (Your own or SAP Cloud Platform account):
     1. **Warning:** Do not use this if SAP Jam already has integrations that SAP Jam as a "SAML Local Identity Provider". This will break existing integrations
     2. Select "Admin" > "Integrations" > "SAML Local Identity Provider"
     3. Click "Generate Key Pair"
@@ -71,7 +71,7 @@ Run this project by invoking the "main" method of the OAuth2SAMLWorkflowSample c
   2. Select "Run Configuration"
   3. Click the "Argument's" tab
   4. Configure the "Program Arguments" Text Field:
-     * Use a Hana Cloud Platform account as your SAML Trusted IDP:
+     * Use a SAP Cloud Platform account as your SAML Trusted IDP:
        * baseUrl=https://developer.sapjam.com clientKey=\{SAP JAM OAUTH CLIENT KEY\} idpId=\{LOCAL PROVIDER NAME\} subjectNameId=\{USERNAME EMAIL ADDRESS\} subjectNameIdFormat=email idpPrivateKey=\{SIGNING KEY\}
      * Use your own Base64 encoded IDP private key and use SAP Jam as your SAML Trusted IDP:
        * baseUrl=https://\{YOUR SAP JAM URL\} clientKey=\{SAP JAM OAUTH CLIENT KEY\} idpId=\{SAP JAM SAML TRUSTED IDP\} subjectNameId=\{USERNAME EMAIL ADDRESS\} subjectNameIdFormat=email idpPrivateKey=\{BASE64 ENCODED IDP PRIVATE KEY\}

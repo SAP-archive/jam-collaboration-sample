@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Uses Key and Secret from your Hana Cloud Platform Jam instance's OAuth Client to perform OAuth 1.0a authentication
+        // Uses Key and Secret from your SAP Cloud Platform Jam instance's OAuth Client to perform OAuth 1.0a authentication
         JamAuthConfig.instance().configure("developer.sapjam.com",
                 "<Oauth client key>",
                 "<Oauth client secret>");

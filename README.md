@@ -1,10 +1,10 @@
 # SAPJamSampleCode
 A collection of simple sample code containing examples that demonstrate simple API and integration workflows.
 
-### Hana Cloud Platform Web IDE and Jam Widget Samples
+### SAP Cloud Platform Web IDE and Jam Widget Samples
 * Source is located here:
   * https://github.com/SAP/SAPJamSampleCode/tree/master/hcp_samples
-* These samples demonstrate how to use Hana Cloud Platform Web IDE with Jam Widgets (Feed, Forum and Group).
+* These samples demonstrate how to use SAP Cloud Platform Web IDE with Jam Widgets (Feed, Forum and Group).
 
 ### Jam OAuth2 Access Token from SAML Bearer Assertion Sample
 * Source and documentation are located here:
@@ -15,9 +15,9 @@ A collection of simple sample code containing examples that demonstrate simple A
 ### OpenSAP2015 - Unit 3
 * Source is located here:
   * https://github.com/SAP/SAPJamSampleCode/tree/master/OpenSAP2015
-* Source code for the Open SAP Extending your HANA Cloud Platform with Jam Week, unit 3 demo.
-  * Requirements – an account on SAP HANA Cloud Platform Trial Account with the SAP Jam developer edition enabled.
-* These Java server pages uses your SAP HANA Cloud Platform and SAP Jam instance via OAuth2SAMLBearerAssertion to:
+* Source code for the Open SAP Extending your SAP Cloud Platform with Jam Week, unit 3 demo.
+  * Requirements – an account on SAP Cloud Platform Trial Account with the SAP Jam developer edition enabled.
+* These Java server pages uses your SAP Cloud Platform and SAP Jam instance via OAuth2SAMLBearerAssertion to:
   * Get general information from SAP Jam about the currently logged-in user and the list of groups that user belongs to.
   * Get group specific information from SAP Jam
   * Create a single-use token for SAP Jam div-embedded widget authentication
@@ -82,10 +82,10 @@ A collection of simple sample code containing examples that demonstrate simple A
 ### SAP_Jam_OData_HCP
 * Source is located here:
   * https://github.com/SAP/SAPJamSampleCode/tree/master/SAP_Jam_OData_HCP
-* Source code for the "Integrations using SAP Jam API for applications on SAP HANA Cloud Platform" tutorial in the "SAP Jam Developer Guide".
+* Source code for the "Integrations using SAP Jam API for applications on SAP Cloud Platform" tutorial in the "SAP Jam Developer Guide".
   * http://help.sap.com/download/documentation/sapjam/developer/index.html#033db47cbaa6404cbb8c2e53a220964d.html
-  * Requirements - An account on a SAP Jam instance and an associated SAP HANA Cloud Platform trial account.
-* This Java servlet uses your SAP HANA Cloud Platform and SAP Jam instance via OAuth2SAMLBearerAssertion to:
+  * Requirements - An account on a SAP Jam instance and an associated SAP Cloud Platform trial account.
+* This Java servlet uses your SAP Cloud Platform and SAP Jam instance via OAuth2SAMLBearerAssertion to:
   * Get general information from SAP Jam about the currently logged-in user and the list of groups that user belongs to.
   * Get group specific information from SAP Jam.
   * Create a single-use token for SAP Jam div-embedded widget authentication.
@@ -105,7 +105,7 @@ A collection of simple sample code containing examples that demonstrate simple A
 * Source is located here:
   * https://github.com/SAP/SAPJamSampleCode/tree/master/Webhooks/Java/JamWebHooksTester4j
 * Source code for the "Webhooks - Alias Users" and "Webhooks - Groups" tutorial in the "SAP Jam Developer Guide".
-  * Requirements - An account on a SAP Jam instance and an associated SAP HANA Cloud Platform trial account.
+  * Requirements - An account on a SAP Jam instance and an associated SAP Cloud Platform trial account.
 * This Java EE server implements a simple endpoint for SAP Jam Push Notifications to use as a callback URL.
 * The related documentation is located at:
   * http://help.sap.com/download/documentation/sapjam/developer/index.html#a711035f7d824819a38764b530e0b5a9.html
@@ -115,7 +115,7 @@ A collection of simple sample code containing examples that demonstrate simple A
 * WAR file is located here:
   * https://github.com/SAP/SAPJamSampleCode/tree/master/Webhooks/Java/SAPJamSampleWebhooksServer
 * WAR file for the "Webhooks - Alias Users - WAR file" and "Webhooks - Groups - WAR file" tutorial in the "SAP Jam Developer Guide".
-  * Requirements - An account on a SAP Jam instance and an associated SAP HANA Cloud Platform trial account.
+  * Requirements - An account on a SAP Jam instance and an associated SAP Cloud Platform trial account.
 * This Java EE server implements a simple endpoint for SAP Jam Push Notifications to use as a callback URL.
 * The related documentation is located at:
   * http://help.sap.com/download/documentation/sapjam/developer/index.html#9ad5bea5f6884699a4f1a07be9b07e2c.html
