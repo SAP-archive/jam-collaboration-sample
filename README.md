@@ -25,16 +25,14 @@ A collection of simple sample code containing examples that demonstrate simple A
   * Create a group with a Primary External Object
 
 ### OAuth_1_HMAC-SHA1
-* Source is located here:
-  * https://github.com/SAP/SAPJamSampleCode/tree/master/OAuth_1_HMAC-SHA1
 * Provides authentication of the SAP Jam API with OAuth1.0 and the HMAC-SHA1 signature type.
 * This example assumes a Jam deployment with an OAuth client application configured for a company, and a user that can successfully log into the company via the Web UI to authorize the OAuth client to make API requests on behalf of the user.
 * Consists of the following Eclipse Projects:
-  * [jam_java_oauth1_client](../OAuth_1_HMAC-SHA1/jam_java_oauth1_client)
+  * [jam_java_oauth1_client](https://github.com/SAP/SAPJamSampleCode/tree/master/OAuth_1_HMAC-SHA1/jam_java_oauth1_client)
     * Client library that provides authentication of the SAP Jam API with OAuth1.0 and the HMAC-SHA1 signature type.
     * Dependencies:
       * junit.jar - http://junit.org/
-  * [jam_java_oauth1_hmac_sha1_client_sample](../OAuth_1_HMAC-SHA1/jam_java_oauth1_hmac_sha1_client_sample)
+  * [jam_java_oauth1_hmac_sha1_client_sample](https://github.com/SAP/SAPJamSampleCode/tree/master/OAuth_1_HMAC-SHA1/jam_java_oauth1_hmac_sha1_client_sample)
      * Sample client code that uses the jam_java_oauth1_client library to illustrate authentication of the SAP Jam API with OAuth1.0 and the HMAC-SHA1 signature type.
 
 ### ODATA API Integration with Android
