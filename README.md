@@ -39,13 +39,13 @@ A collection of simple sample code containing examples that demonstrate simple A
 * Source is located here:
   * https://github.com/SAP/SAPJamSampleCode/tree/master/Android_Integrations/mobile-sdk-android
 * Source code for the "ODATA API Integration with Android" tutorial in the "SAP Jam Collaboration Mobile Developer Guide".
-* The related documentation is located at: http://help.sap.com/download/documentation/sapjam/sap_jam_mobile_developer_help/index.html#f4ab0401001746eba19c6934e937685f.html
+* The related documentation is located at: http://help.sap.com/viewer/u_collaboration_mobile_dev_help/f4ab0401001746eba19c6934e937685f.html
 
 ### ODATA API Integration with iOS Swift 2.x
 * Source is located here:
   * https://github.com/SAP/SAPJamSampleCode/tree/master/iOS_Integrations/mobile-sdk-ios/Swift%202.x
 * Source code for the "ODATA API Integration with iOS Swift 2.x" tutorial in the "SAP Jam Collaboration Mobile Developer Guide".
-* The related documentation is located at: http://help.sap.com/download/documentation/sapjam/sap_jam_mobile_developer_help/index.html#3283220b3f7d4287a1baf34f8ac433de.html
+* The related documentation is located at: http://help.sap.com/viewer/u_collaboration_mobile_dev_help/3283220b3f7d4287a1baf34f8ac433de.html
 
 ### OpenSocial/Gadget/Localization
 * Source is located here:
@@ -117,13 +117,13 @@ A collection of simple sample code containing examples that demonstrate simple A
 * Source is located here:
   * https://github.com/SAP/SAPJamSampleCode/tree/master/Android_Integrations/mobile-sdk-android
 * Source code for the "WebView HTML5 Client Integration with Android" tutorial in the "SAP Jam Collaboration Mobile Developer Guide".
-* The related documentation is located at: http://help.sap.com/download/documentation/sapjam/sap_jam_mobile_developer_help/index.html#d52503114d4d4cfb92e40443e312ba23.html
+* The related documentation is located at: http://help.sap.com/viewer/u_collaboration_mobile_dev_help/d52503114d4d4cfb92e40443e312ba23.html
 
 ### WebView HTML5 Client Integration with iOS Swift 2.x
 * Source is located here:
   * https://github.com/SAP/SAPJamSampleCode/tree/master/iOS_Integrations/mobile-sdk-ios/Swift%202.x
 * Source code for the "WebView HTML5 Client Integration with iOS Swift 2.x" tutorial in the "SAP Jam Collaboration Mobile Developer Guide".
-* The related documentation is located at: http://help.sap.com/download/documentation/sapjam/sap_jam_mobile_developer_help/index.html#2b06ee38ed704834a1cf4fac4a2732c4.html
+* The related documentation is located at: http://help.sap.com/viewer/u_collaboration_mobile_dev_help/2b06ee38ed704834a1cf4fac4a2732c4.html
 
 ### YouTube OpenSocial URL Gadget
 * Source is located here:
