@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <Module specificationVersion='2'>
+  <ModulePrefs title="YouTube OpenSocial URL Gadget" width="570" height="325" author="Marc Bell" description="Embeds a YouTube video in an OpenSocial URL Gadget">
+    <Require feature="wave" />
+    <Require feature="dynamic-height" />
+  </ModulePrefs>
+  <Content type="html" href="url.html" />
+</Module >

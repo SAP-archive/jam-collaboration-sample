@@ -47,12 +47,6 @@ A collection of simple sample code containing examples that demonstrate simple A
 * Source code for the "ODATA API Integration with iOS Swift 2.x" tutorial in the "SAP Jam Collaboration Mobile Developer Guide".
 * The related documentation is located at: http://help.sap.com/download/documentation/sapjam/sap_jam_mobile_developer_help/index.html#3283220b3f7d4287a1baf34f8ac433de.html
 
-### OpenSocial/Gadget/HCP_Lumira
-* Source is located here:
-  * https://github.com/SAP/SAPJamSampleCode/tree/master/OpenSocial/Gadget/HCP_Lumira
-* Source code for the OpenSocial gadget in "Integrate OpenSocial Gadgets into SAP Jam Collaboration" in the "SAP Jam Developer Guide".
-* The related documentation is located at: http://help.sap.com/download/documentation/sapjam/developer/index.html#1c2351040fe04d59b54d079256b20dbe.html
-
 ### OpenSocial/Gadget/Localization
 * Source is located here:
   * https://github.com/SAP/SAPJamSampleCode/tree/master/OpenSocial/Gadget/Localization
@@ -130,6 +124,12 @@ A collection of simple sample code containing examples that demonstrate simple A
   * https://github.com/SAP/SAPJamSampleCode/tree/master/iOS_Integrations/mobile-sdk-ios/Swift%202.x
 * Source code for the "WebView HTML5 Client Integration with iOS Swift 2.x" tutorial in the "SAP Jam Collaboration Mobile Developer Guide".
 * The related documentation is located at: http://help.sap.com/download/documentation/sapjam/sap_jam_mobile_developer_help/index.html#2b06ee38ed704834a1cf4fac4a2732c4.html
+
+### YouTube OpenSocial URL Gadget
+* Source is located here:
+  * https://github.com/SAP/SAPJamSampleCode/tree/master/OpenSocial/Gadget/youtubeurlgadget
+* Source code for the OpenSocial gadget in "Integrate OpenSocial Gadgets into SAP Jam Collaboration" in the "SAP Jam Developer Guide".
+* The related documentation is located at: http://help.sap.com/download/documentation/sapjam/developer/index.html#1c2351040fe04d59b54d079256b20dbe.html
 
 
 # License

@@ -1,7 +1,7 @@
-OpenSocial Lumira Gadget
+YouTube OpenSocial URL Gadget
 ======
 
-This OpenSocial gadget visualizes data from SAP Lumira in an iframe with a call to an external URL.
+This OpenSocial gadget embeds a YouTube video in an OpenSocial URL Gadget. Use the included neo-app.json file if you are using SAP Cloud Platform to host the gadget.
 
 
 # License
