@@ -6,7 +6,7 @@ http://www.apache.org/licenses/LICENSE-2.0
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 */
 // API Reference to gadgets.io:
-// http://help.sap.com/download/documentation/sapjam/developer/index.html#opensocial/references/JSRef-gadgets_io.html
+// https://help.sap.com/viewer/u_collaboration_dev_help/fca1266a6b8f46babe52c1bcf891b74b.html
 var URL = "https://CALL_TO_YOUR_ODATA_SERVICE_PROVIDER"
 var REQUEST_OPTIONS = {
         AUTHORIZATION: 'OAUTH2',

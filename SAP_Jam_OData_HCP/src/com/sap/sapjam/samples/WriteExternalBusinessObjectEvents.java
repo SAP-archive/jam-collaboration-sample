@@ -35,7 +35,7 @@ import com.sap.core.connectivity.api.http.HttpDestination;
  * 
  *  This Java SAP Cloud Platform project requires a Java destination called sap_jam_odata. This file can be found in the root of this project. 
  * 
- * *  For more information about the SAP Jam API see: http://help.sap.com/download/documentation/sapjam/developer/index.html
+ * *  For more information about the SAP Jam API see: https://help.sap.com/viewer/u_collaboration_dev_help
  *  
  */
 
@@ -72,7 +72,7 @@ public class WriteExternalBusinessObjectEvents extends HttpServlet {
 				HttpDestination destination = (HttpDestination)ctx.lookup("java:comp/env/sap_jam_odata");
 				HttpClient client = destination.createHttpClient();
 				
-				//http://help.sap.com/download/documentation/sapjam/developer/index.html#odata/references/ActivitiesPOSTActivities.html
+				//https://help.sap.com/viewer/u_collaboration_dev_help/odata/references/ActivitiesPOSTActivities.html
 				String url = "/Activities";
 				HttpPost jamRequest = new HttpPost( url );
 				

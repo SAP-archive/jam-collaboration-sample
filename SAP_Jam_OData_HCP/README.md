@@ -1,6 +1,6 @@
 ### SAP_Jam_OData_HCP
 * Source code for the "Using the SAP Jam API to access data in Jam via OData" tutorial in the "SAP Jam Developer Guide".
-  * http://help.sap.com/download/documentation/sapjam/developer/index.html#033db47cbaa6404cbb8c2e53a220964d.html
+  * https://help.sap.com/viewer/u_collaboration_dev_help/033db47cbaa6404cbb8c2e53a220964d.html
   * Requirements - An account on a SAP Jam instance and an associated SAP Cloud Platform trial account.
 * This Java servlet uses your SAP Cloud Platform and SAP Jam instance via OAuth2SAMLBearerAssertion to:
   * Get general information from SAP Jam about the currently logged-in user and the list of groups that user belongs to.

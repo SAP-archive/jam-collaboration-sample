@@ -2,7 +2,7 @@
 
 # Introduction
 This sample provides some working Java sample client code to illustrate authentication of the SAP Jam API using an OAuth2 access token obtained from a SAML2 bearer assertion as described here:
-* http://help.sap.com/download/documentation/sapjam/developer/index.html#c6813927839541a19e4703c3a2564f1b.html
+* https://help.sap.com/viewer/u_collaboration_dev_help/c6813927839541a19e4703c3a2564f1b.html
 
 
 # Setup
@@ -14,7 +14,7 @@ This sample provides some working Java sample client code to illustrate authenti
     * https://build.shibboleth.net/nexus/content/repositories/releases/org/opensaml/opensaml/2.6.6/opensaml-2.6.6-bin.zip
 5. Extract the zip file and place the files in the project folder ( ../OAuth2SAML/Java/GetOAuth2AccessToken/jam_java_oauth2_saml_client_sample )
 6. Setup an OAuth client in SAP Jam:
-    * http://help.sap.com/download/documentation/sapjam/developer/index.html#9f86d35bb9594635bd505063bbe76830.html
+    * https://help.sap.com/viewer/u_collaboration_dev_help/9f86d35bb9594635bd505063bbe76830.html
 
 
 ### Configure Required Keys
@@ -25,7 +25,7 @@ This sample provides some working Java sample client code to illustrate authenti
     * https://\{YOUR_SAP_JAM_URL\}
 * clientKey - The SAP Jam OAuth client key:
   * SAP Jam instance (Your own or SAP Cloud Platform account):
-    * http://help.sap.com/download/documentation/sapjam/developer/index.html#9f86d35bb9594635bd505063bbe76830.html
+    * https://help.sap.com/viewer/u_collaboration_dev_help/9f86d35bb9594635bd505063bbe76830.html
 * idpId - Identifier for the SAML trusted IDP:
   * SAP Cloud Platform account:
     1. Select "Trust" > "Trust Management"
