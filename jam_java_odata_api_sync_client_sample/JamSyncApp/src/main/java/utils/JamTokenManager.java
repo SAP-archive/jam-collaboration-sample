@@ -113,7 +113,7 @@ public class JamTokenManager {
         final String grantType, /* eg. client_credentials | urn:ietf:params:oauth:grant-type:saml2-bearer */
         final JamConfig.SamlConfigInfo samlConfig) throws Exception {
 
-        // Source JAM => Get Access token from Source JAM
+        // Source Jam => Get Access token from Source Jam
         final String urlString = host + API_ODATA_TOKEN;
 
         System.out.println("    Member[" + userEmail + "] Token => URL: " + urlString);

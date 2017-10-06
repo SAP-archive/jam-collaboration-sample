@@ -199,7 +199,7 @@ public class JamSyncGroupContents extends JamSyncInterface {
     }
 
     //////////////////////////////////////////////////////////////////////////////////////////////////////
-    // Sync all folders from source to destination JAM instance
+    // Sync all folders from source to destination Jam instance
     //////////////////////////////////////////////////////////////////////////////////////////////////////
     public void syncAllFolders(final String fromGroupUUID, final String toGroupUUID) throws Exception {
         System.out.println("   JamSyncGroupMembers::SyncAllFolders BEGIN!");
@@ -292,7 +292,7 @@ public class JamSyncGroupContents extends JamSyncInterface {
     }
 
     //////////////////////////////////////////////////////////////////////////////////////////////////////
-    // Sync all contents from source to destination JAM instance
+    // Sync all contents from source to destination Jam instance
     //////////////////////////////////////////////////////////////////////////////////////////////////////	
     public void syncAllContents(final String fromGroupUUID, final String toGroupUUID) {
         // Get list of contents to download
@@ -316,7 +316,7 @@ public class JamSyncGroupContents extends JamSyncInterface {
     }
 
     //////////////////////////////////////////////////////////////////////////////
-    // Sync replies of a feed between JAM Instances
+    // Sync replies of a feed between Jam Instances
     //////////////////////////////////////////////////////////////////////////////
     public void syncContentFeedEntriesReplies(String fromGroupUUID, String toGroupUUID, String fromFeedEntryUUID, String toFeedEntryUUID, String creatorEmail)
             throws Exception {
@@ -335,7 +335,7 @@ public class JamSyncGroupContents extends JamSyncInterface {
         JSONArray replyListJson = (repliesResponseJSON.getJSONObject("d")).getJSONArray("results");
 
         //////////////////////////////////////////////////////////////////////////////
-        // DOWNLOAD replies of a feed from source JAM Instance
+        // DOWNLOAD replies of a feed from source Jam Instance
         //////////////////////////////////////////////////////////////////////////////
 
         List<Reply> replies = new ArrayList<Reply>();
@@ -366,7 +366,7 @@ public class JamSyncGroupContents extends JamSyncInterface {
         }
 
         //////////////////////////////////////////////////////////////////////////////
-        // UPLOAD replies in reverse order to destination JAM Instance
+        // UPLOAD replies in reverse order to destination Jam Instance
         //////////////////////////////////////////////////////////////////////////////
         for (int i = 0; i < replies.size(); i++) {
             Reply r = replies.get(i);
@@ -411,7 +411,7 @@ public class JamSyncGroupContents extends JamSyncInterface {
         JSONArray fromContentFeedEntriesJSON = feedEntries.getJSONArray("results");
 
         //////////////////////////////////////////////////////////////////////////////
-        // DOWNLOAD feeds from source JAM Instance
+        // DOWNLOAD feeds from source Jam Instance
         //////////////////////////////////////////////////////////////////////////////
         List<Feed> feeds = new ArrayList<Feed>();
         while (fromContentFeedEntriesJSON != null && fromContentFeedEntriesJSON.length() > 0) {
@@ -445,7 +445,7 @@ public class JamSyncGroupContents extends JamSyncInterface {
         }
 
         //////////////////////////////////////////////////////////////////////////////
-        // UPLOAD feeds to destination JAM instance in reverse order
+        // UPLOAD feeds to destination Jam instance in reverse order
         //////////////////////////////////////////////////////////////////////////////
         for (int i = feeds.size() - 1; i >= 0; i--) {
             Feed feed = feeds.get(i);
@@ -479,7 +479,7 @@ public class JamSyncGroupContents extends JamSyncInterface {
     }
 
     //////////////////////////////////////////////////////////////////////////////////////////////////////
-    // Sync all content items from source to destination JAM instance
+    // Sync all content items from source to destination Jam instance
     //////////////////////////////////////////////////////////////////////////////////////////////////////
     public void syncAllContentItems(String fromGroupUUID, String toGroupUUID) throws Exception {
 
@@ -499,7 +499,7 @@ public class JamSyncGroupContents extends JamSyncInterface {
         JSONObject allContentItemsReponseJSON = JamNetworkManager.getInstance().GetRequest(url, new JamNetworkParam());
         JSONArray contentItemListJson = ((JSONObject)allContentItemsReponseJSON.get("d")).getJSONArray("results");
 
-        // Go through each page of AllContentItems and upload the content items to destination JAM instance
+        // Go through each page of AllContentItems and upload the content items to destination Jam instance
         while (contentItemListJson != null && contentItemListJson.length() > 0) {
             System.out.println("        Found CONTENTITEMS: " + contentItemListJson.length());
 

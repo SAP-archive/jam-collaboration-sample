@@ -69,7 +69,7 @@ A collection of simple sample code containing examples that demonstrate simple A
 ### SAP Jam Java Data Api Sync Client Sample
 * Source is located here:
   * https://github.com/SAP/SAPJamSampleCode/tree/master/jam_java_odata_api_sync_client_sample
-* The servlet demonstrates how to download content from one instance of SAP JAM and upload the content to another instance of SAP JAM.
+* The servlet demonstrates how to download content from one instance of SAP Jam and upload the content to another instance of SAP Jam.
 
 ### SAP_Jam_OData_HCP
 * Source is located here:
