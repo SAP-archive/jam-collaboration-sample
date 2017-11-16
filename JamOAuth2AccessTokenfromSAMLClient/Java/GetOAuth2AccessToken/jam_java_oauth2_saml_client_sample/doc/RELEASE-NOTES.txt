@@ -1,0 +1,214 @@
+Changes in Release 2.6.6
+=============================================
+[JOST-242] - Resource required to be non-empty in AuthzDecisionStatement
+[JOST-243] - Metadata reload errors logged on DEBUG only
+[JOST-244] - durations in log messages should be given in ISO format, not milliseconds
+[JOST-245] - BaseSAML2MessageDecoder tries to get SAML1 role descriptor
+
+Changes in Release 2.6.5
+=============================================
+[JOST-240] - Allow reloading metadata providers to accept a null Timer
+
+Changes in Release 2.6.4
+=============================================
+Remove endorsement of Xerces and Xalan (for further info see SIDP-619).
+
+Changes in Release 2.6.3
+=============================================
+[JOST-239] - Switch to use new XML Tooling HostnameVerifier impl 
+
+Changes in Release 2.6.2
+=============================================
+[JOST-223] - Misspelled error constant in SAML 1 StatusCode interface
+[JOST-224] - Superfluous/wrong type constants in SAML 1 and SAML 2 interfaces
+[JOST-226] - Mispelled method name in SAMLMDCredentialContext, getEncryptionMethod vs getEncryptionMethods 
+[JOST-238] - https:// URLs with HttpResource or FileBackedHttpResource are vulnerable to MitM attacks (missing hostname verification)
+
+Changes in Release 2.6.1
+=============================================
+[JOST-210] - AbstractSAMLObject should not override equals but not hashCode
+[JOST-213] - Scoping class has incorrect xsi:type 
+[JOST-215] - Opensaml1 failed to pass veracode due Use of Wrong Operator in String Comparison (CWE ID 597) 
+[JOST-218] - AbstractMetadataProvider is incorrectly performing an unnecessary validity check and erroneous TRACE message
+[JOST-219] - AbstractReloadingMetadataProvider refresh() is public, should be synchronized for concurrent access
+[JOST-220] - IdP stopping metadata retrieval
+
+Also, updating POM to implement:
+[JXT-106] - Update Apache Santuario (xmlsec) to 1.5.6
+
+Changes in Release 2.6.0
+=============================================
+[JOST-135] - Opensaml prunes empty xml namespaces, that are required for correct encryption 
+[JOST-162] - Globally enabling schema validation breaks the Signature metadata filter 
+[JOST-169] - Update Velocity Dependency
+[JOST-183] - AbstractReloadingMetadataProvider code for maxRefreshDelay doesn't match documentation
+[JOST-184] - It would be nice if ESAPI.encodeForURL could be made to work
+[JOST-185] - Defaultbootstrap does not initialize the providers from the WS-Trust and WS-Policy schemas in openws
+[JOST-187] - Velocity initialization code uses an invalid key for the configuration properties set
+[JOST-188] - DefaultBootstrap is unnecessarily calling Velocity singleton initialization
+[JOST-190] - Backport some bugfixes from OpenSAML3
+[JOST-191] - Merge back misc XACML fixes from OpenSAML3
+[JOST-192] - org.opensaml.saml2.metadata.provider.SignatureValidationFilter => java.lang.UnsupportedOperationException
+[JOST-193] - Make the implementation of custom bootstrap code easier, without relying on private data from DefaultBootstrap
+[JOST-194] - org.opensaml.ESAPISecurityConfig should use singleton pattern like the default ESAPI reference class
+[JOST-195] - Use system property-based override for our custom ESAPI config rather than ESAPI locator class call 
+[JOST-196] - On MetadataProviderCredentialResolver, expose the MetadataProvider used to construct the resolver
+[JOST-197] - XML providers for Async Logout extensions
+[JOST-198] - Configuration files for XMLObject providers often missing Type registrations
+[JOST-199] - SAML SOAP encoders should use the supplied outbound SOAP Envelope from the message context, if it exists 
+[JOST-200] - Reduce memory usage of unit tests
+[JOST-201] - SAML1 and 2 base message encoders have incorrect selection logic in getEndpointURL()
+[JOST-203] - Head/body template injection for SAML binding templates
+[JOST-205] - MetadataProvider doesn't report error during refresh if the metadata file doesn't exist any more
+[JOST-206] - Setting failFastInitialization=false has no effect
+[JOST-207] - FilesystemMetadataProvider fetchMetadata() does not work correctly if file last modified time is older than getLastRefresh() in some cases 
+[JOST-208] - FileBackedHTTPMetadataProvider constructor doesn't behave correctly vis-a-vis fail-fast setting if the backing file path has problems 
+[JOST-209] - Add tests for fail-fast in HTTPMetadataProvider 
+
+Changes in Release 2.5.3
+=============================================
+[JOST-176] - SubjectConfirmationUnmarshaller processChildElement misplaces KeyInfo
+[JOST-179] - FileBackedHTTPMetadataProvider does not properly release HTTP connections
+[JOST-180] - Update dependencies
+[JOST-181] - Bug in marshalling an XACML Policy AttributeDesignatorType
+[JOST-182] - Clean up maven assembly description
+
+Changes in Release 2.5.2
+=============================================
+[JOST-160] - Not all times in logging normalized to Zulu
+[JOST-163] - No way to stop AbstractReloadingMetadataProvider threads
+[JOST-164] - MetadataProvider minRefreshDelay cannot be set greater than 4 hours
+[JOST-165] - Update 3rd party runtime library dependencies
+[JOST-171] - org.opensaml.saml2.metadata.provider.AbstractReloadingMetadataProvider:246 missing param in logging statement
+[JOST-173] - Wrong Treatment of ResponseLocation and Location in Metadata
+[JOST-174] - ChainingMetadataProvider calls clear() on unmodifiable list
+
+Changes in Release 2.5.1
+=============================================
+ - Addressed a signature wrapping attack
+
+Changes in Release 2.5.0
+=============================================
+[JOST-119] - change pom to create attached -sources jar
+[JOST-135] - Update Version class with getVersion() and getName() static methods
+[JOST-145] - can not create policy file with EnvironmentAttributeDesignator tag
+[JOST-147] - Add support for MDUI extensions into OpenSAML2
+[JOST-149] - SubjectTypeImplBuilder typo causes invalid documents to be built
+[JOST-150] - Template input needs to be HTML encoded.
+[JOST-151] - Fix up some potential concurrency issues with metadata provders and filters
+[JOST-152] - Some pom changes for Opensaml2
+[JOST-153] - Javadoc fixes
+[JOST-154] - FilesystemMetadataProviderTest failed
+[JOST-155] - MetadataCredentialResolverCachingTest.testSigning_UnspecToEncryption failed
+[JOST-156] - MetadataCredentialResolverCachingTest.testSigning_EncryptionToUnspec failed
+[JOST-157] - references to spaces.internet.edu may need changed to wiki.shibboleth.net
+[JOST-158] - Update POM for Shib.net Repo and attach generate Javadocs
+[JOST-159] - Support EntityAttributes metadata extension
+
+Changes in Release 2.4.1
+=============================================
+[JOST-134] - Static helper classes should not use static Loggers
+[JOST-137] - Option for BasicSAMLArtifactMapEntryFactory to explicitly serialize the SAML message in the newly created entry
+[JOST-139] - Update libs for 2.4.1
+[JOST-140] - understoodHeaders fields not initialized in HTTPSOAP11Decoder no args constructor
+[JOST-142] - Replay rule passes "null" into replay check if requiredRule not set
+[JOST-143] - Metadata refresh occuring every 5 minutes
+[JOST-144] - ResourcedBacked metadata provider with local files reloads too often
+
+Changes in Release 2.4.0
+=============================================
+[JOST-36]  - XACML marshallers and unmarshallers should extend abstract superclasses
+[JOST-63] - Investigate whether a fatal metadata filter error can be made to not cause a fatal error in the provider
+[JOST-88]  - Create an AttributeConsumingServiceSelector, similar in API to the existing Basic- and AuthnRequest Endpoint selectors
+[JOST-100] - BaseMessageDecoder uses java.net.URL equals() for URI comparison
+[JOST-102] - don't download remote metadata if it hasn't changed
+[JOST-106] - Improved logging when configuration / metadata reloaded
+[JOST-107] - cached metadata should include XML comments
+[JOST-108] - Metadata provider should ignore SSL server cert (at least optionally)
+[JOST-109] - The IDP should verify that the fetched metadata is valid, even after filters, before overwriting the previous one
+[JOST-110] - Clean up Basic- artifact map and entry or add alternative implementations
+[JOST-111] - control metadata load with a scheduled job rather than on demand
+[JOST-112] - Overuse of InclusivePrefixes list when signing
+[JOST-116] - QueryDescriptorTypeImpl.getOrderedChildren() does not include children from superclass
+[JOST-118] - Configure Apache XML Security library to not emit line breaks by default
+[JOST-122] - Consent value mismatch
+[JOST-123] - Use of invalide metadata results in strange error from RequiredValidUntil filter
+[JOST-124] - Metadata providers could log a warning if the initial metadata they get is expired
+[JOST-125] - FileBackedHTTPMetadataProvider stops reloading metadata under certain conditions
+[JOST-126] - Declare all non-visibly used namespaces on a signed SignableSAMLObject
+[JOST-127] - Update 3rd party libraries for 2.4.0 release
+[JOST-128] - Defaulting of various metadata collections may be incorrect
+[JOST-129] - Malformed metadata causes an NPE (OrganizationName, OrganizationDisplayName and probably many others)
+[JOST-131] - Typo in SSODescriptor interface getDefaultArtificateResolutionService()
+
+Changes in Release 2.3.2
+=============================================
+[JOST-84] - FileBackedHTTPMetadataProvider takes inordinately long to time out
+[JOST-98] - AttributeConsumingServices in SPSSODescriptorSchemaValidator
+[JOST-101] - Expired message should be logged with WARN level instead of ERROR
+[JOST-103] - Wrong log level for "Credential cache cleared"
+[JOST-104] - Expired metadata element caused fatal IllegalArgumentException
+
+Changes in Release 2.3.1
+=============================================
+[JOST-99] - Form generation vulnerable to XSS injection
+
+Changes in Release 2.3.0
+=============================================
+[JOST-28] - BaseSAML1MessageDecoder and subclasses mistakenly take an ArtifactMap as a constructor arg
+[JOST-69] - BasicSAMLArtifactMap dereferences a pointer that might be null
+[JOST-76] - Relax requirement that HTTP requests be GETs when using Redirect and Artifact Binding
+[JOST-77] - Metadata refresh causes ConcurrentModificationException and idp failure
+[JOST-78] - Update libs for 2.2.4 release
+[JOST-79] - StatusDetail builder is missing from saml2-protocol-config.properties file
+[JOST-83] - Add object provider support for Condition for Delegation Restriction extension schema
+[JOST-85] - metadata missing entityId causes NullPointerException
+[JOST-86] - In absense of matching endpoint, IDP choose the first ACS in metadata.
+[JOST-87] - In org.opensaml.saml2.binding.encoding.BaseSAML2MessageEncoder OutboundMessage should be compared against StatusResponseType instead of Response
+[JOST-89] - Create XMLObject object provider for IdP Discovery Protocol endpoint
+* Add object provider support for SAML 2 ECP schema
+
+Changes in Release 2.2.3
+=============================================
+[JOST-70] - ActionType typo in xacml20-context-config.xml
+[JOST-71] - Wrong localname in StatusMessageTypeImplBuilder 
+[JOST-72] - XACMLAuthzDecisionQuery : returncontext attribute not handled properly by marshaller
+* Add various XACML constants
+* Major memory usage improvements
+* Pick up latest version of libs
+
+
+Changes in Release 2.2.2
+=============================================
+[JOST-66] Cleanup ArtifactMap related classes
+[JOST-67] SAML 1 and 2 POST encoders rely on system encoding when providing the bytes for Base64 encoding
+* Update logging libraries to grab some bug fixes
+
+Changes in Release 2.2.1
+=============================================
+[JOST-64] - Multiple calls to ChainingMetadataProvider#getMetadata result in "EntitiesDescriptor is already the child of another XMLObject" exception
+
+Changes in Release 2.2.0
+=============================================
+[JOST-32] - MetadataSignatureFilter should verify signatures on RoleDescriptor and AffiliationDescriptor elements
+[JOST-35] - some XACML elements not correctly marshalled
+[JOST-37] - inline policies in XACML policy sets cannot be unmarshalled
+[JOST-38] - Marshalling problem for AttributeAssignmentType
+[JOST-39] - ReferencedPolicies not used correctly
+[JOST-40] - Misspelled method name in ReferencedPoliciesType
+[JOST-42] - Missing function for PolicySetType choice group
+[JOST-43] - Method setExpression() of class ExpressionType doesn't work
+[JOST-44] - Method getAttributeValues() of AttributeType should return List<AttributeValueType>
+[JOST-45] - Missing StatusMessage and Description XACML object implementations
+[JOST-46] - Method getPolicies of PolicySetType returns null
+[JOST-48] - Add feature to require validUntil expiration on metadata
+[JOST-49] - cacheDuration and validUntil values in metadata are ignored
+[JOST-50] - Security policy rule which evaluates and enforces SAML 2 metadata SPSSODescriptor/@AuthnRequestsSigned
+[JOST-51] - Issue with multiple obligation handlers
+[JOST-53] - boolean values can not be nulled. Setters should take Boolean objects as in the SAML classes
+[JOST-54] - New addObligationhandlers method in ObligationService
+[JOST-62] - Add version information in library JAR manifest and provide command line tool to view it
+
+Changes in Release 2.1.0
+=============================================
+* Addition of contributed XACML code

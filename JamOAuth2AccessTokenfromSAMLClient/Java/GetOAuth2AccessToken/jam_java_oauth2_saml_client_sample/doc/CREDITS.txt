@@ -1,0 +1,62 @@
+ Current Development Team
+
+   Scott Cantor
+   The Ohio State University
+
+   Daniel Fisher
+   Virginia Tech
+   
+   Brent Putman
+   Georgetown University
+   
+   Rod Widdowson
+   Steading System Software LLP
+
+   Ian Young
+   Independent
+
+   Tom Zeller
+   Dragonacea, LLC
+      
+  
+ Emeritus Developers
+
+   Derek Atkins
+
+   Jim Fox
+
+   Walter Hoehn
+
+   Chad LaJoie
+
+   Derek Morr
+
+   Will Norris
+  
+ Emeritus Contributors
+
+   Steven Carmody
+   Brown University
+
+   Ken Klingenstein
+   Internet2
+
+   Nate Klingenstein
+   Internet2
+
+   Nicole Harris
+   TERENA
+
+   RL "Bob" Morgan
+   University of Washington
+   http://shibboleth.net/community/news/20120717.html
+
+   Many others!
+   
+Additional thanks to:
+
+    Internet2
+
+    The National Science Foundation
+    
+    H�kon Sagehaug and Yuri Demchenko for XACML code contributions
