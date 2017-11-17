@@ -5,13 +5,6 @@ This sample provides a Java client to illustrate authentication of the SAP Jam A
 * Tutorial is located here:
   * https://help.sap.com/viewer/u_collaboration_dev_help/a3e069bc71304c5abeab9b04e035422d.html
 
-# Prerequisite
-SAP Jam Collaboration service on SAP Cloud Platform.
-
-## Result
-Prints the OAuth access token to the console.
-With this access token, you'll be able to make authenticated requests to the SAP Jam API.
-
 
 # License
 Copyright 2014, SAP AG
