@@ -1,8 +1,8 @@
 # Jam OAuth2 Access Token from SAML Bearer Assertion CLI Sample
 
 # Introduction
-This sample provides a Java CLI client to illustrate authentication of the SAP Jam API using an OAuth2 access token obtained from a SAML2 bearer assertion provided by SAP Cloud Platform or an external identity provider as described here:
-* https://help.sap.com/viewer/u_collaboration_dev_help/c6813927839541a19e4703c3a2564f1b.html
+This tutorial provides a Java CLI client sample to illustrate authentication of the SAP Jam API using an OAuth2 access token obtained from a SAML2 bearer assertion. The assertion is provided by SAP Cloud Platform or an external identity provider.
+* https://help.sap.com/viewer/u_collaboration_dev_help/497154966f274cada5e07c869905b5ee.html
 
 # Setup
 1. Download the source code from:

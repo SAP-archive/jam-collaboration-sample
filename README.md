@@ -9,14 +9,14 @@ A collection of simple sample code containing examples that demonstrate simple A
 ### Jam OAuth2 Access Token from SAML Bearer Assertion Sample
 * Source and documentation are located here:
   * https://github.com/SAP/SAPJamSampleCode/tree/master/JamOAuth2AccessTokenfromSAMLClient
-* This sample provides a Java client to illustrate authentication of the SAP Jam API using an OAuth2 access token obtained from a SAML2 bearer assertion provided by SAP Cloud Platform or an external identity provider as described here:
+* This sample provides a Java client to illustrate authentication of the SAP Jam API using an OAuth2 access token obtained from a SAML2 bearer assertion. The assertion is provided by SAP Cloud Platform or an external identity provider. The related tutorial is located here:
   * https://help.sap.com/viewer/u_collaboration_dev_help/c6813927839541a19e4703c3a2564f1b.html
 
 ### Jam OAuth2 Access Token from SAML Bearer Assertion CLI Sample
 * Source and documentation are located here:
   * https://github.com/SAP/SAPJamSampleCode/tree/master/JamOAuth2AccessTokenfromSAMLClientCLI
-* This sample provides a Java CLI client to illustrate authentication of the SAP Jam API using an OAuth2 access token obtained from a SAML2 bearer assertion provided by SAP Cloud Platform or an external identity provider as described here:
-  * https://help.sap.com/viewer/u_collaboration_dev_help/c6813927839541a19e4703c3a2564f1b.html
+* This tutorial provides a Java CLI client sample to illustrate authentication of the SAP Jam API using an OAuth2 access token obtained from a SAML2 bearer assertion. The assertion is provided by SAP Cloud Platform or an external identity provider.
+  * https://help.sap.com/viewer/u_collaboration_dev_help/497154966f274cada5e07c869905b5ee.html
 
 ### OpenSAP2015 - Unit 3
 * Source is located here:
