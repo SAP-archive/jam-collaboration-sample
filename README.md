@@ -74,6 +74,13 @@ A collection of simple sample code containing examples that demonstrate simple A
 * The "SAP Jam OpenSocial Tutorial" is a set of 7 lessons for developing a simple SAP Jam OpenSocial gadget.
 * This tutorial is located at: https://help.sap.com/viewer/u_collaboration_dev_help/9d304bf736cd4514bba2b42393a09ec6.html
 
+### SAP Jam Collaboration Custom Header Sample
+* Source is located here:
+  * https://github.com/SAP/SAPJamSampleCode/tree/master/CustomHeader
+* Custom Header reference documentation is located here:
+  * ![Configure the Branding and Support options](https://help.sap.com/viewer/u_admin_help/b1cf4e797d4a1014ba05827eb0e91070.html)
+  * ![Best practices for custom headers](https://help.sap.com/viewer/u_admin_help/4099c60a71684aa18124604a1a4fe3a6.html)
+
 ### SAP Jam Java Data Api Sync Client Sample
 * Source is located here:
   * https://github.com/SAP/SAPJamSampleCode/tree/master/jam_java_odata_api_sync_client_sample
