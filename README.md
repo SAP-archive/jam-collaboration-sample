@@ -77,9 +77,10 @@ A collection of simple sample code containing examples that demonstrate simple A
 ### SAP Jam Collaboration Custom Header Sample
 * Source is located here:
   * https://github.com/SAP/SAPJamSampleCode/tree/master/CustomHeader
-* Custom Header reference documentation is located here:
-  * ![Configure the Branding and Support options](https://help.sap.com/viewer/u_admin_help/b1cf4e797d4a1014ba05827eb0e91070.html)
-  * ![Best practices for custom headers](https://help.sap.com/viewer/u_admin_help/4099c60a71684aa18124604a1a4fe3a6.html)
+* Use the Custom Header reference documentation located here:
+  * [Configure the Branding and Support options](https://help.sap.com/viewer/u_admin_help/b1cf4e797d4a1014ba05827eb0e91070.html)
+  * [Best practices for custom headers](https://help.sap.com/viewer/u_admin_help/4099c60a71684aa18124604a1a4fe3a6.html)
+
 
 ### SAP Jam Java Data Api Sync Client Sample
 * Source is located here:
