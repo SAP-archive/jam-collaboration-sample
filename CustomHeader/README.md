@@ -1,5 +1,7 @@
 # SAP Jam Collaboration Custom Header Sample
 
+![alt text](custom_header_sample_screenshot.png "Custom Header Sample Screenshot")
+
 # Introduction
 This sample is a custom header that provides an interactive branded experience for SAP Jam Collaboration. It uses HTML, CSS, Bootstrap, custom Javascript libraries, and a stock-ticker gadget to accomplish this. The stock-ticker gadget also uses a third-party library that gets stock-ticker data from a third-party service (Alpha Vantage - https://www.alphavantage.co).
 
@@ -11,8 +13,6 @@ To use this sample simply:
 * Use the Custom Header reference documentation located here:
   * [Configure the Branding and Support options](https://help.sap.com/viewer/u_admin_help/b1cf4e797d4a1014ba05827eb0e91070.html)
   * [Best practices for custom headers](https://help.sap.com/viewer/u_admin_help/4099c60a71684aa18124604a1a4fe3a6.html)
-
-![alt text](custom_header_sample_screenshot.png "Custom Header Sample Screenshot")
 
 
 # License
