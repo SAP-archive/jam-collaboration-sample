@@ -1,20 +1,20 @@
 ### OpenSAP2015 Course
 * Source code for demos.
-  * Requirements – an account on SAP Cloud Platform Trial Account with the SAP Jam developer edition enabled.
+  * Requirements – an account on SAP Cloud Platform Trial Account with the SAP Jam Collaboration developer edition enabled.
 
-### Week 4 Unit 3: Work Patterns and the SAP Jam OData API
-* These Java server pages use your SAP Cloud Platform and SAP Jam instance via OAuth2SAMLBearerAssertion to:
-  * Get general information from SAP Jam about the currently logged-in user and the list of groups that user belongs to.
-  * Get group specific information from SAP Jam
-  * Create a single-use token for SAP Jam div-embedded widget authentication
+### Week 4 Unit 3: Work Patterns and the SAP Jam Collaboration OData API
+* These Java server pages use your SAP Cloud Platform and SAP Jam Collaboration instance via OAuth2SAMLBearerAssertion to:
+  * Get general information from SAP Jam Collaboration about the currently logged-in user and the list of groups that user belongs to.
+  * Get group specific information from SAP Jam Collaboration
+  * Create a single-use token for SAP Jam Collaboration div-embedded widget authentication
   * Create a group
   * Create a group with a Primary External Object
 
-### Week 4 Unit 4: Embedding SAP Jam in Your Application
-* These Java server pages use your SAP Cloud Platform and SAP Jam instance via OAuth2SAMLBearerAssertion to:
-  * Create a single-use token for SAP Jam div-embedded widget authentication
+### Week 4 Unit 4: Embedding SAP Jam Collaboration in Your Application
+* These Java server pages use your SAP Cloud Platform and SAP Jam Collaboration instance via OAuth2SAMLBearerAssertion to:
+  * Create a single-use token for SAP Jam Collaboration div-embedded widget authentication
   * Create a HTML IFrame Feed Widget
-* An HTML page that uses your SAP Cloud Platform and SAP Jam instance to:
+* An HTML page that uses your SAP Cloud Platform and SAP Jam Collaboration instance to:
   *	Create a HTML IFrame Share Widget
 
 # License

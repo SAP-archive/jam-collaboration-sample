@@ -1,7 +1,7 @@
 OpenSocial OAuth 2.0 SAML Bearer Assertion Gadget
 =======================
 
-This OpenSocial gadget will authenticate via OAuth 2.0 SAML Bearer Assertion and display data from your Jam instance using the SAP Jam OData API.
+This OpenSocial gadget will authenticate via OAuth 2.0 SAML Bearer Assertion and display data from your Jam instance using the SAP Jam Collaboration OData API.
 
 
 # License

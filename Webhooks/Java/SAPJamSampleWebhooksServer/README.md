@@ -1,7 +1,7 @@
 ### Webhooks WAR File Sample
-* WAR file for the "Webhooks - Alias Users - WAR file" and "Webhooks - Groups - WAR file" tutorial in the "SAP Jam Developer Guide".
-  * Requirements - An account on a SAP Jam instance and an associated SAP Cloud Platform trial account.
-* This Java EE server implements a simple endpoint for SAP Jam Push Notifications to use as a callback URL.
+* WAR file for the "Webhooks - Alias Users - WAR file" and "Webhooks - Groups - WAR file" tutorial in the "SAP Jam Collaboration Developer Guide".
+  * Requirements - An account on a SAP Jam Collaboration instance and an associated SAP Cloud Platform trial account.
+* This Java EE server implements a simple endpoint for SAP Jam Collaboration Push Notifications to use as a callback URL.
 
 
 # License
