@@ -1,0 +1,15 @@
+PODS:
+  - KeychainAccess (3.1.0)
+  - OAuthSwift (1.2.0)
+
+DEPENDENCIES:
+  - KeychainAccess
+  - OAuthSwift
+
+SPEC CHECKSUMS:
+  KeychainAccess: 94c5540b32eabf7bc32bfb976a268e8ea05fd6da
+  OAuthSwift: 7fd6855b8e4d58eb5a30d156ea9bed7a8aecd1ca
+
+PODFILE CHECKSUM: c8a6687aab707a73d5df8415465ca5b961ebb321
+
+COCOAPODS: 1.4.0
