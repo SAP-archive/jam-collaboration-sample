@@ -26,8 +26,9 @@ To use this sample simply:
   element attributes from the custom header code.
 * Deselect the "Show standard navigation menus" checkbox if you do not want to use SAP Jam Collaboration's header menus.
 * Replace href links pointing to "#link_to_..." with URLs in your SAP Jam Collaboration instance.
-Set up the Stock Gadget (optional):
-* Go to the documentation on line 515.
+
+## Set up the Stock Gadget (optional):
+* Go to the documentation at the bottom of translated_custom_header.html
 
 ## Tips:
 * Avoid the inclusion of scripts and external resources that would block or slow down overall performance.
@@ -179,6 +180,7 @@ Add new languages by modifying the custom header JSON object with the following 
 | Ukrainian                             | uk-UA         |
 | Vietnamese                            | vi-VN         |
 | Welsh                                 | cy-GB         |
+
 
 
 # License
