@@ -1,64 +1,202 @@
 <!-- 
 
-  License
-  Copyright 2014, SAP AG
+License
+Copyright 2014, SAP AG
 
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-     http://www.apache.org/licenses/LICENSE-2.0
+   http://www.apache.org/licenses/LICENSE-2.0
 
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
-  
-
-  Introduction
-  ============
-  
-  This sample is a custom header that provides an interactive branded experience for SAP Jam Collaboration. It uses HTML, CSS, Bootstrap, custom Javascript libraries, and a stock-ticker gadget to accomplish this. The stock-ticker gadget also uses a third-party library that gets stock-ticker data from a third-party service (Alpha Vantage - https://www.alphavantage.co).
-
-  Use of the Alpha Vantage library and service is subject to applicable terms and conditions set out by Alpha Vantage. SAP does not make any representations or warranties respecting the Alpha Vantage library and service and SAP is not liable to you or any third party in respect of any use of the Alpha Vantage library and service.
-
-  To use this sample simply:
-  * Copy and paste this into the custom header of your SAP Jam Collaboration instance.
-  * Follow the in-line documentation in the sample.
-  * Use the Custom Header reference documentation located here:
-    * Configure the Branding and Support options - https://help.sap.com/viewer/u_admin_help/b1cf4e797d4a1014ba05827eb0e91070.html
-    * Best practices for custom headers - https://help.sap.com/viewer/u_admin_help/4099c60a71684aa18124604a1a4fe3a6.html
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
 
 
-  Custom Header Sample Documentation
-  ==================================
+# Introduction
+This sample is a custom header that provides an interactive branded multilingual experience for SAP Jam Collaboration. It uses HTML, CSS, Bootstrap, custom Javascript libraries, and a stock-ticker gadget to accomplish this. The stock-ticker gadget also uses a third-party library that gets stock-ticker data from a third-party service (Alpha Vantage - https://www.alphavantage.co).
 
-  Setup the Custom Header:
-  * Login to SAP Jam Collaboration as a company admin.
-  * Click on the "cog icon" and select "Admin" > "Branding" > "Web". The "Branding and Support" screen appears.
-  * Select the "Enable custom header" checkbox. The "Enable Javascript" checkbox appears.
-  * Select the “Enable JavaScript” checkbox.
-    - Note: If “Enable JavaScript” is unchecked, SAP Jam Collaboration will remove all Javascript tags and html 
-    element attributes from the custom header code.
-  * Deselect the "Show standard navigation menus" checkbox if you do not want to use SAP Jam Collaboration's header menus.
-  * Replace href links pointing to "#link_to_..." with URLs in your SAP Jam Collaboration instance.
+Use of the Alpha Vantage library and service is subject to applicable terms and conditions set out by Alpha Vantage. SAP does not make any representations or warranties respecting the Alpha Vantage library and service and SAP is not liable to you or any third party in respect of any use of the Alpha Vantage library and service.
 
-  Set up the Stock Gadget (optional):
-  * Go to the documentation on line 515.
+To use this sample simply:
+* Copy and paste this into the custom header of your SAP Jam Collaboration instance.
+* Follow the in-line documentation in the sample.
+* Use the Custom Header reference documentation located here:
+  * Configure the Branding and Support options - https://help.sap.com/viewer/u_admin_help/b1cf4e797d4a1014ba05827eb0e91070.html
+  * Best practices for custom headers - https://help.sap.com/viewer/u_admin_help/4099c60a71684aa18124604a1a4fe3a6.html
 
-  Tips:
-  * Avoid the inclusion of scripts and external resources that would block or slow down overall performance.
-  * You can avoid code conflicts with your SAP Jam Collaboration instance by not:
-    - using or interacting with SAP Jam Collaboration Javascript global variables and functions.
-    - invoking undocumented internal JavaScript functions.
-    - adding CSS or Javascript that:
-      - affects elements within <jam-*> tags.
-      - affects elements outside of the header tag.
-  * Ensure you add a prefix to all the IDs and class names for elements in the header.
-    - Note: All names are prefixed with "header-sample-" in this code sample.
+
+# Custom Header Sample Documentation
+
+## Setup the Custom Header:
+* Login to SAP Jam Collaboration as a company admin.
+* Click on the "cog icon" and select "Admin" > "Branding" > "Web". The "Branding and Support" screen appears.
+* Select the "Enable custom header" checkbox. The "Enable Javascript" checkbox appears.
+* Select the “Enable JavaScript” checkbox.
+  * Note: If “Enable JavaScript” is unchecked, SAP Jam Collaboration will remove all Javascript tags and html 
+  element attributes from the custom header code.
+* Deselect the "Show standard navigation menus" checkbox if you do not want to use SAP Jam Collaboration's header menus.
+* Replace href links pointing to "#link_to_..." with URLs in your SAP Jam Collaboration instance.
+Set up the Stock Gadget (optional):
+* Go to the documentation on line 515.
+
+## Tips:
+* Avoid the inclusion of scripts and external resources that would block or slow down overall performance.
+* You can avoid code conflicts with your SAP Jam Collaboration instance by not:
+  * using or interacting with SAP Jam Collaboration Javascript global variables and functions.
+  * invoking undocumented internal JavaScript functions.
+  * adding CSS or Javascript that:
+    * affects elements within <jam-*> tags.
+    * affects elements outside of the header tag.
+* Ensure you add a prefix to all the IDs and class names for elements in the header.
+  * Note: All names are prefixed with "header-sample-" in this code sample.
+
+## Add multilingual support to your custom header:
+* Description: Text that is substituted with translations based on user's language.
+* How it works: Text in the detected langauge is obtained from the custom header JSON object by matching the key specified in the <jam-string> custom header html tag with the key in the custom header JSON object. If the language cannot be matched, then the "default-language" key is used.
+* Usage:
+  * div tag: `<jam-string key="{key}"></jam-string>`
+  * placeholder: `<input placeholder=jam-string:{key}></input>`
+* Example 1 - Create a multilingual dropdownMenuButton for "Welcome" in English, German, and Chinese:
+  * key: "welcome"
+  * div tag: `<jam-string key="welcome"></jam-string>`
+  * Multilingual text:
+    * English = "Welcome"
+    * German = "Herzlich willkommen"
+    * Chinese (Simplified) = "欢迎"
+  * Language Codes and languages:
+    * en = English
+    * de = German
+    * zh-CN = Chinese (Simplified)
+* Example 2 - Create multilingual placholder text for an input box in English, German, and Chinese:
+  * key: "find_everything"
+  * placeholder: `<input id="header-sample-search" placeholder="jam-string:find_everything" />`
+  * Multilingual text:
+    * English = "Find Everything..."
+    * German = "Finde alles ..."
+    * Chinese (Simplified) = "找到一切..."
+  * Language Codes and languages:
+    * en = English
+    * de = German
+    * zh-CN = Chinese (Simplified)
+
+### Example 1 - multilingual dropdownMenuButton
+```
+<li>
+  <div class="header-sample-dropdown">
+    <div class="header-sample-dropdown-toggle" data-header-sample-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-weight: bold">
+      <jam-string key="welcome"></jam-string>
+      <img src="/sample/custom_header/icon-caret-down.png" /> 
+    </div>
+  </div>
+</li>
+```
+
+### Example 2 - multilingual placeholder
+```
+<div class="header-sample-hidden-xs" style="flex: 3; position: relative; margin: 0 10px;">
+  <a id="header-sample-search-icon" aria-hidden="true" tabindex="-1" href="javascript:void(0);" data-type="search">
+    <img src="/sample/custom_header/icon-search.png" />
+  </a>
+  <input id="header-sample-search" placeholder="jam-string:find_everything" />
+</div>
+```
+
+### Example 1 and 2 - custom header JSON object
+```
+{
+  "en": {
+    "welcome": "Welcome",
+    "find_everything": "Find Everything..."
+  },
+  "de": {
+    "welcome": "Herzlich willkommen",
+    "find_everything": "Finde alles ..."
+  },
+  "zh-CN": {
+    "welcome": "欢迎",
+    "find_everything": "找到一切..."
+  },
+  "default-language": "en"
+}
+```
+
+# Reference
+## Custom header JSON object 
+The custom header JSON object (custom_header_translation.json) is structured as follows:
+```
+{
+  "{language_1}": {
+    "{key_1}": "{value}",
+    "{key_2}": "{value}"
+  },
+  "{language_2}": {
+    "{key_1}": "{value}",
+    "{key_2}": "{value}"
+  },
+  "{language_2}": {
+    "{key_1}": "{value}",
+    "{key_2}": "{value}"
+  },
+  "default-language": "en"
+}
+```
+
+
+## Languages and Language Codes
+Add new languages by modifying the custom header JSON object with the following language codes:
+
+| Language                              | Language Code |
+| ------------------------------------- | ------------- |
+| Arabic                                | ar-SA         |
+| English (US)                          | en            |
+| Bulgarian                             | bg-BG         |
+| Catalan                               | ca-ES         |
+| Chinese (Simplified)                  | zh-CN         |
+| Chinese (Traditional)                 | zh-TW         |
+| Croatian                              | hr-HR         |
+| Czech                                 | cs-CZ         |
+| Danish                                | da            |
+| Dutch (Netherlands)                   | nl            |
+| English (UK)                          | en-GB         |
+| Finnish                               | fi-FI         |
+| French (Canadian)                     | fr-CA         |
+| French (France)                       | fr            |
+| German (Germany)                      | de            |
+| German (Swiss)                        | de-CH         |
+| Greek (Greece)                        | el-GR         |
+| Hebrew                                | he-IL         |
+| Hindi                                 | hi            |
+| Hungarian                             | hu            |
+| Indonesian                            | id            |
+| Italian                               | it            |
+| Japanese                              | ja            |
+| Korean                                | ko            |
+| Malaysian                             | ms            |
+| Norwegian (Bokmål)                    | nb-NO         |
+| Polish                                | pl            |
+| Portuguese (Brazil)                   | pt-BR         |
+| Portuguese (Portugal)                 | pt-PT         |
+| Romanian                              | ro            |
+| Russian                               | ru            |
+| Serbian (Serbia)                      | sr-RS         |
+| Slovak                                | sk-SK         |
+| Slovenian                             | sl-SI         |
+| Spanish (Mexico)                      | es-MX         |
+| Spanish (Spain)                       | es            |
+| Swedish                               | sv-SE         |
+| Thai                                  | th            |
+| Turkish                               | tr-TR         |
+| Ukrainian                             | uk-UA         |
+| Vietnamese                            | vi-VN         |
+| Welsh                                 | cy-GB         |
+
 
 -->
+
 <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 <style>
 .header-sample-dropdown {
@@ -285,7 +423,6 @@
 #header-sample-menu ul li > a {
   display: inline-block;
 }
-
 #header-sample-menu ul li .header-sample-dropdown-menu {
   margin-top: 0;
   background: #199198;
@@ -304,7 +441,6 @@
 #header-sample-main .header-sample-action-menu ul.header-sample-dropdown-menu {
   border-radius: 8px;
 }
-
 .header-sample-responsive-container {
     margin-right: auto;
     margin-left: auto;
@@ -354,7 +490,6 @@
   border-bottom-color: rgba(0, 0, 0, 0.25);
   top: -11px;
 }
-
 .custom-header-sample-popover .arrow:after {
   position: absolute;
   display: block;
@@ -365,7 +500,6 @@
   border-width: 10px;
   content: "";
 }
-
 .custom-header-sample-popover.bottom .arrow:after {
   margin-right: -10px;
   top: 1px;
@@ -373,7 +507,6 @@
   border-top-width: 0;
   border-bottom-color: #fff;
 }
-
 .custom-header-sample-popover-title {
   margin: 0;
   padding: 8px 14px;
@@ -385,11 +518,9 @@
   border-radius: 5px 5px 0 0;
   border-radius: 0;
 }
-
 .custom-header-sample-popover-content {
   padding: 9px 14px;
 }
-
 @media (min-width: 768px) {
   .header-sample-responsive-container {
       width: 730px;
@@ -417,12 +548,12 @@
     <span class="header-sample-action-menu header-sample-hidden-xs">
       <div class="header-sample-dropdown">
         <div class="header-sample-dropdown-toggle" data-header-sample-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          + I want to...
+          <jam-string key="i_want_to"></jam-string>
         </div>
         <ul class="header-sample-dropdown-menu" aria-labelledby="dropdownMenuButton" style="text-align:left;">
-          <li><a class="header-sample-dropdown-item" href="/blogs/new">Create a blog</a></li>
-          <li><a class="header-sample-dropdown-item" href="#link_to_group_add_question_page">Ask a question</a></li>
-          <li><a class="header-sample-dropdown-item" href="/documents/new?action_type=upload">Share a document</a></li>
+          <li><a class="header-sample-dropdown-item" href="/blogs/new"><jam-string key="create_a_blog"></jam-string></a></li>
+          <li><a class="header-sample-dropdown-item" href="#link_to_group_add_question_page"><jam-string key="ask_a_question"></jam-string></a></li>
+          <li><a class="header-sample-dropdown-item" href="/documents/new?action_type=upload"><jam-string key="share_a_document"></jam-string></a></li>
         </ul>
       </div>
     </span>
@@ -440,7 +571,7 @@
       <a id="header-sample-search-icon" aria-hidden="true" tabindex="-1" href="javascript:void(0);" data-type="search">
         <img src="/sample/custom_header/icon-search.png" />
       </a>
-      <input id="header-sample-search" placeholder="Find everything..." />
+      <input id="header-sample-search" placeholder="jam-string:find_everything" />
     </div>
     <div style="flex: 1; text-align: right; line-height: 26px; padding: 10px 0;">
       <ul id="header-sample-jam-gadgets" role="navigation">
@@ -458,44 +589,44 @@
       <li>
         <div class="header-sample-dropdown">
           <div class="header-sample-dropdown-toggle" data-header-sample-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-weight: bold">
-            Welcome <img src="/sample/custom_header/icon-caret-down.png" />
+            <jam-string key="welcome"></jam-string> <img src="/sample/custom_header/icon-caret-down.png" /> 
           </div>
           <div class="header-sample-dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="header-sample-dropdown-item" href="#link_to_homepage_tab">History</a>
-            <a class="header-sample-dropdown-item" href="#link_to_homepage_tab">Mission</a>
-            <a class="header-sample-dropdown-item" href="#link_to_homepage_tab">Who We Are</a>
+            <a class="header-sample-dropdown-item" href="#link_to_homepage_tab"><jam-string key="history"></jam-string></a>
+            <a class="header-sample-dropdown-item" href="#link_to_homepage_tab"><jam-string key="mission"></jam-string></a>
+            <a class="header-sample-dropdown-item" href="#link_to_homepage_tab"><jam-string key="who_we_are"></jam-string></a>
           </div>
         </div>
       </li>
       <li>
         <div class="header-sample-dropdown">
           <div class="header-sample-dropdown-toggle" data-header-sample-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Employee Services <img src="/sample/custom_header/icon-caret-down.png" />
+            <jam-string key="employee_services"></jam-string> <img src="/sample/custom_header/icon-caret-down.png" />
           </div>
           <div class="header-sample-dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="header-sample-dropdown-item" href="#link_to_knowledge_base_category_filter">Career</a>
-            <a class="header-sample-dropdown-item" href="#link_to_knowledge_base_category_filter">Compensation</a>
-            <a class="header-sample-dropdown-item" href="#link_to_knowledge_base_category_filter">Benefits</a>
-            <a class="header-sample-dropdown-item" href="#link_to_knowledge_base_category_filter">Travel and Expense</a>
+            <a class="header-sample-dropdown-item" href="#link_to_knowledge_base_category_filter"><jam-string key="career"></jam-string></a>
+            <a class="header-sample-dropdown-item" href="#link_to_knowledge_base_category_filter"><jam-string key="compensation"></jam-string></a>
+            <a class="header-sample-dropdown-item" href="#link_to_knowledge_base_category_filter"><jam-string key="benefits"></jam-string></a>
+            <a class="header-sample-dropdown-item" href="#link_to_knowledge_base_category_filter"><jam-string key="travel_and_expense"></jam-string></a>
           </div>
         </div>
       </li>
-      <li><a href="/groups/dashboard">Groups</a></li>
+      <li><a href="/groups/dashboard"><jam-string key="groups"></jam-string></a></li>
     </ul>
     <ul class="header-sample-hidden-xs" style="text-align: center;">
       <li>
        <a class="header-sample-menu-item" href="#link_to_customers_integration">
-          <div><img src="/sample/custom_header/icon-customer.png" /> Customers</div>
+          <div><img src="/sample/custom_header/icon-customer.png" /> <jam-string key="customers"></jam-string></div>
         </a>
       </li>
       <li>
         <a class="header-sample-menu-item" href="#link_to_suppliers_integration">
-          <div><img src="/sample/custom_header/icon-suppliers.png" /> Suppliers</div>
+          <div><img src="/sample/custom_header/icon-suppliers.png" /> <jam-string key="suppliers"></jam-string></div>
         </a>
       </li>
       <li>
         <a class="header-sample-menu-item" href="#link_to_learning_integration">
-          <div><img src="/sample/custom_header/icon-learning.png" /> Learning</div>
+          <div><img src="/sample/custom_header/icon-learning.png" /> <jam-string key="learning"></jam-string></div>
         </a>
       </li>
     </ul>
@@ -556,30 +687,25 @@
   * This sample demonstrates how you can use a third-party Javascript library to add extra functionality
     to your custom header.
     - We will create a stock-ticker gadget in your custom header by using a third-party library that gets stock-ticker data from a third-party service (Alpha Vantage - https://www.alphavantage.co).
-
   Set up the Stock Gadget:
   * Uncomment the Stock Gadget sample code.
   * Create a private key with the third-party service (Alpha Vantage - https://www.alphavantage.co).
-
   Tips - Make sure that your scripts:
   * do not create namespace collisions with existing SAP Jam Collaboration libraries.
   * do not rely on SAP Jam Collaboration libraries and functions.
   * do not change SAP Jam Collaboration libraries and functions.
   * are self contained.
   * are encapsulated.
-
-
 -->
 
 <!-- BEGIN Sample stock gadget code 
-
 <script type="text/javascript" src="/sample/custom_header/stocks.js"></script>
 <script type="text/javascript">
   (function() {
-    var key = 'placeholder'; // **** replace 'placeholder with private key from Alpha Vantage at https://www.alphavantage.co/support/#api-key ****
+    var key = 'privateKeyPlaceholder'; // **** replace 'privateKeyPlaceholder with private key from Alpha Vantage at https://www.alphavantage.co/support/#api-key ****
     new headerSampleGlobals.Stocks(key)
       .timeSeries({
-        symbol: 'placeholder', // **** replace 'placeholder' with stock ticker symbol, eg. ETR:SAP
+        symbol: 'stockTickerPlaceholder', // **** replace 'stockTickerPlaceholder' with stock ticker symbol, eg. ETR:SAP
         interval: 'daily',
         amount: 1
       })
